@@ -24,10 +24,10 @@ With **Fate Weaver**, the oracle alleviates such problems by:
 - Roleplay Mode
 - Combat Mode
 - Integrated Dice Roller
-- Redirect to Roleplay NPC Generator (a side project)
+- Integrated NPC Generator
 
 ## Status Report:
 ### Update 1
 - Spent precious time trying to learn figma, turns out it's pretty cool, but ultimately a paid service.
-- As of right now (Day 1 of the project), I'm leaving things as they are (with this readme file being my latest contribution)
-- I'll get back to development the following day, doing it the "pure way" (HTML/CSS/JS) since I'm not well-versed in frameworks as of yet
+- As of right now (Day 1 of the project), I'm leaving things as they are (with this readme file sadly being my only contribution)
+- Don't worry though, I'm only getting started!
