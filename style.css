@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+a {
+    text-decoration: none;
+    color: #F6EDEA;
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("vanishing-stripes.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: #F6EDEA;
+    animation: rotate 6s infinite alternate linear;
+}
+
+#heading {
+    font-weight: lighter;
+    opacity: 50%;
+    margin: 0px;
+}
+
+#fateWeaver {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 350%;
+    margin: 0 0 12px;
+    line-height: 125%;
+    background: linear-gradient(to right, #EF5119, #E6A087, #9B3815);
+    background-size: 200% 200%;
+    color: #F6EDEA;
+    background-clip: text;
+    -webkit-background-clip:text;
+    animation: rainbow 2s ease-in-out infinite;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+
+#fateWeaver:hover{
+    color:rgba(0,0,0,0);
+  }
+
+.start-card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    background-color: #251e1e;
+    text-align: center;
+}
+.buttons {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    text-decoration: none;
+}
+
+#exploration, #combat, #roleplay {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #EF5119;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: inherit;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    background-color: #9B3815;
+    font-size: large;
+    cursor: pointer;
+}
+
+.about {
+    width: 50%;
+    height: 50px;
+    border: 2px solid #EF5119;
+    font-family: inherit;
+    color: inherit;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    background-color: #251e1e;
+    font-size: normal;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.iconZ {
+    font-family: inherit;
+    color: inherit;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    background-color: #251e1e;
+    font-size: larger;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.about:hover, .iconZ:hover {
+    opacity: 50%;
+    transition: all 0.375s;
+}
+
+#exploration:hover, #combat:hover, #roleplay:hover {
+    background-color: #251e1e;
+    transition: all 0.375s;
+}
+
+#exploration:hover {
+    color: rgb(44, 209, 71);
+    border: 2px solid rgb(29, 155, 29);
+}
+
+#combat:hover {
+    color: rgb(209, 44, 44);
+    border: 2px solid rgb(155, 29, 29);
+}
+
+#roleplay:hover {
+    color: rgb(44, 154, 209);
+    border: 2px solid rgb(29, 67, 155);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #9B3815;
+    color: #F6EDEA;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    background-color: #251e1e;
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #9B3815;
+    color: #F6EDEA;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+  @keyframes rotate {
+    100% {
+        background-position: 15% 50%;
+    }
+  }
+
+@keyframes rainbow { 
+  0%{background-position:left}
+  50%{background-position:right}
+  100%{background-position:left}
+}
+
+  @media (width >= 500px) {
+    body {
+        padding: 0;
+    }
+    .start-card {
+        margin: 0;
+        width: 400px;
+    }
+  }
