@@ -27,8 +27,9 @@ body {
 
 #heading {
     font-weight: lighter;
+    font-size: small;
     opacity: 50%;
-    margin: 0px;
+    margin: 10px;
 }
 
 #fateWeaver {
@@ -105,7 +106,7 @@ body {
     padding: 0 16px;
     border-radius: 1.25rem;
     background-color: #251e1e;
-    font-size: larger;
+    font-size: 25px;
     cursor: pointer;
     text-decoration: none;
 }
