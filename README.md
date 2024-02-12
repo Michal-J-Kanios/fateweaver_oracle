@@ -18,7 +18,6 @@ With **Fate Weaver**, the oracle alleviates such problems by:
 - (Decision-making Roleplay) Presenting unbiased answers to "Yes or No" questions or other probability disputes (likely/unlikely/very likely/etc.)
 - (Actual Roleplay) Providing you with sensory descriptions and prompts to write descriptions around, as well as rolling up a status quo of the current scene's roleplay and determining NPC attitudes, such as friendly, neutral or hostile (also adds details for immersion, such as the stinginess of merchants, prices of cleric services, etc)
   
-  Last but not least, **Fate Weaver** introduces optional, manually-adjusted PAPs (Plot Armor Points) for people who don't want to lose characters too quickly. They act as tokens that allow you to roll on the "Consequences" table whenever your character would normally die in that situation.
 ## Why Fate Weaver?
   As a fledgling solo ttrpg player, you've probably heard of Mythic, DM Yourself, and other DM-emulating oracles. They're great, don't get me wrong, but flipping through the pages to get what you need can get tiresome. What if we made an oracle that requires no physical dice, doesn't take up your desk space, and is more streamlined towards D&D 5E - *world's greatest roleplaying game?* Enter: Fate Weaver.
 
