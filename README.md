@@ -1,6 +1,7 @@
 # FATE WEAVER 🎲
 ## Solo Play Oracle for Dungeons & Dragons 5th Edition 🧙‍♂️
-![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)=250x250
+![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)
+<img src="[https://github.com/favicon.ico](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)" height="200" width="400">
 
 ### Have you ever wanted to play D&D solo for whatever reason?
 - Friends don't want to play D&D?
