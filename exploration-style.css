@@ -17,7 +17,7 @@
     color: #F6EDEA;
     text-align: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,23 +88,44 @@ p {
 
 .blank, .blank-2 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: #07170b;
 }
 
-.second {
+.blank h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    padding: 0.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3),
+    5px 5px 70px rgba(255,255,255,0.5);
+    color: #F6EDEA;
+}
+
+.blank p {
+    color: #F6EDEA;
+    font-size: 1.5rem;
+}
+
+.blank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second, .third, .fourth, .fifth, .sixth {
     background-image: url("explo-stripes.svg");
     background-attachment: fixed;
-    height: 950px;
+    height: 400px;
     flex-direction: row;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     width: 320px;
-    height: 500px;
+    height: 300px;
     background-color: #2b9b15;
     align-items: center;
     justify-content: space-between;
@@ -130,7 +151,7 @@ p {
     background-size: cover;
     background-position: center;
     margin-top: 20px;
-    border-radius: 0.7rem;
+    border-radius: 6.25rem;
 }
 
 .card .info h3 {
@@ -142,6 +163,15 @@ p {
 .card a {
     margin-bottom: 1.5rem;
     width: 70%;
+}
+
+.card select {
+    background-color: #07170b;
+    color: #F6EDEA;
+    width: 70%;
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
 }
 
 .blank-2 {
