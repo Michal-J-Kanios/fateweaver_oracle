@@ -1,7 +1,7 @@
 # FATE WEAVER 🎲
 ## GM Emulator/Solo Play oracle for Dungeons & Dragons 5th Edition 🧙‍♂️
 ### Project is open source. Feel free to reflavour it to other TTRPG systems, as long as you give proper credit :)
-Will upload better screenshots once I'm done.
+(Will upload better quality screenshots once I'm done)
 ![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)
 
 ### Have you ever wanted to play D&D solo for whatever reason?
@@ -26,11 +26,5 @@ With **Fate Weaver**, the oracle alleviates such problems by:
 - Exploration Mode
 - Roleplay Mode
 - Combat Mode
-- Integrated Dice Roller
 - Integrated NPC Generator
-
-## Status Report:
-### Update 1
-- Spent precious time trying to learn figma, turns out it's pretty cool, but ultimately a paid service.
-- As of right now (Day 1 of the project), I'm leaving things as they are (with this readme file sadly being my only contribution)
-- Don't worry though, I'm only getting started!
+- Integrated Settlement Designer
