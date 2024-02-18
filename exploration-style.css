@@ -127,11 +127,13 @@ p {
     width: 320px;
     height: 300px;
     background-color: #2b9b15;
+    background: linear-gradient(30deg, #2b9b15, #07170b);
     align-items: center;
     justify-content: space-between;
     border-radius: 0.7rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     transition: all 0.375s ease;
+    border: 12px solid linear-gradient(30deg, #87e695, #19ef32);
 }
 
 .card:hover {
