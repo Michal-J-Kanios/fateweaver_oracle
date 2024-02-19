@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="blurt/blurt.min.css">
+    <script src="blurt/blurt.min.js"></script>
     <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="exploration-style.css">
     <title>Exploration Mode</title>
@@ -39,7 +41,7 @@
                 <h3>Pace</h3>
                 <p>Keep the story moving.</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollPace();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
@@ -297,6 +299,30 @@
             <div class="info">
                 <h3>Random Trap</h3>
                 <p>Roll for the room's trap(s).</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container tenth">
+        <div class="card">
+            <div class="info">
+                <h3>Room Type</h3>
+                <p>Roll for room contents, such as monsters & items.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Special Encounter</h3>
+                <p>Roll if you got this in "Room Type".</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Random Treasure</h3>
+                <p>Roll for random valuables.</p>
             </div>
             <button class="rollButton" onclick="">ROLL</button>
         </div>

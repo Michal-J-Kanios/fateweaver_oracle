@@ -126,7 +126,7 @@ p {
     justify-content: center;
 }
 
-.second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth {
+.second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth {
     background-image: url("explo-stripes.svg");
     background-attachment: fixed;
     height: 400px;
@@ -179,6 +179,7 @@ p {
 .card .rollButton {
     margin-bottom: 1.5rem;
     width: 70%;
+    cursor: pointer;
 }
 
 .card a {
