@@ -614,3 +614,95 @@
             escapable: true
         });
     }
+
+    //DUNGEON SECTION
+    //===============
+
+    function rollRoomType() {
+        const RoomType = [
+            "Empty",
+            "Monster",
+            "Monster with treasure",
+            "Trap",
+            "Trap with treasure",
+            "Unguarded treasure",
+            "Special Encounter"
+        ]
+        const RoomTypeIndex = Math.floor(Math.random() * RoomType.length)
+        blurt({
+            title: 'Room Type',
+            text: RoomType[RoomTypeIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+
+    function rollSencounter() {
+        const sEncoun = [
+            "A mysterious altar",
+            "Observed from afar",
+            "A lair",
+            "A creature pen",
+            "Unfriendly inhabitants",
+            "A strange glowing object",
+            "An ominous gathering",
+            "Slain travelers",
+            "Slain travelers (bones)",
+            "Friendly inhabitants",
+            "A spiritual entity",
+            "A religious gathering",
+            "A lone priest",
+            "The emissary of a deity",
+            "Corrupted by magic",
+            "A trap for the unwary",
+            "An evil entity",
+            "Guards on duty",
+            "Hostile animals/pets",
+            "An enemy patrol",
+            "Organized labor",
+            "An abandoned mystical object",
+            "A hostile entity",
+            "A captive",
+            "Hunted by an enemy",
+            "A sacred site",
+            "Someone seeks your death",
+            "Assistance is asked",
+            "A ritual gathering",
+            "A magical guardian",
+            "A portal to somewhere else",
+            "Legacy of an ancient ritual",
+            "A sleeping enemy",
+            "A blocked or broken path",
+            "Signs of a horrible fate",
+            "An enemy lying in wait",
+            "A lone survivor",
+            "A secret meeting",
+            "A strange, sealed container",
+            "A magical barrier protecting an object",
+            "Aftermath of a spell gone wrong",
+            "A meeting of leaders",
+            "An outcast",
+            "A dangerous discovery",
+            "An ancient secret",
+            "A group of prisoners",
+            "A meeting of enemies",
+            "A place of devastation",
+            "An unknown artefact",
+            "A summoning",
+            "A cursed object",
+            "Whispering voices",
+            "A friendly gathering",
+            "Your reputation preceds you",
+            "Roll two Special Encounters"
+        ]
+        const sEncounIndex = Math.floor(Math.random() * sEncoun.length)
+        blurt({
+            title: 'Special Encounter',
+            text: sEncoun[sEncounIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
