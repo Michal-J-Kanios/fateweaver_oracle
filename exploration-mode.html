@@ -124,17 +124,17 @@
         </div>
         <div class="card">
             <div class="info">
-                <h3>Area</h3>
-                <p>Is anyone or anything near.</p>
+                <h3>Creatures</h3>
+                <p>What are the local creatures doing (can be humanoids too).</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollArea();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
                 <h3>Weird Locales</h3>
                 <p>A supernatural twist to spice up a location.</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollWeird();">ROLL</button>
         </div>
     </div>
 
@@ -155,7 +155,7 @@
                 <option value="Underwater">Underwater</option>
                 <option value="Underdark">Underdark</option>
             </select>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollBiomeEvent();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
@@ -173,14 +173,9 @@
         <div class="card">
             <div class="info">
                 <h3>Terrain</h3>
-                <p>Roll how the terrain affects you.</p>
-                <select id="terrainEffects">
-                    <option value="Advantageous">Advantageous</option>
-                    <option value="Neutral">Neutral</option>
-                    <option value="Difficult">Difficult</option>
-                </select>
+                <p>Roll for exciting terrain quirks.</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollTerrain();">ROLL</button>
         </div>
     </div>
 
@@ -258,8 +253,8 @@
     <div class="container eighth">
         <div class="card">
             <div class="info">
-                <h3>Cults</h3>
-                <p>Roll for cults and religious groups present in your dungeon.</p>
+                <h3>Inhabitants</h3>
+                <p>Roll for creatures, cults, and religious groups present in your dungeon.</p>
             </div>
             <button class="rollButton" onclick="">ROLL</button>
         </div>
@@ -289,15 +284,15 @@
         </div>
         <div class="card">
             <div class="info">
-                <h3>Hazards</h3>
-                <p>Roll for environmental hazards.</p>
+                <h3>Obstacles</h3>
+                <p>Roll for something in the way.</p>
             </div>
             <button class="rollButton" onclick="">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
                 <h3>Random Trap</h3>
-                <p>Roll for the room's trap(s).</p>
+                <p>Roll for the room's trap(s) (trigger, severity, effect).</p>
             </div>
             <button class="rollButton" onclick="">ROLL</button>
         </div>
@@ -322,6 +317,107 @@
             <div class="info">
                 <h3>Random Treasure</h3>
                 <p>Roll for random valuables.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container eleventh">
+        <div class="card">
+            <div class="info">
+                <h3>Chamber Purpose</h3>
+                <p>Choose dungeon type and see.</p>
+                <select id="dungeonType">
+                    <option value="Generic">Generic</option>
+                    <option value="Maze">Maze</option>
+                    <option value="Tomb">Tomb</option>
+                    <option value="Lair">Lair</option>
+                    <option value="Mine">Mine</option>
+                    <option value="Stronghold">Stronghold</option>
+                    <option value="Treasure Vault">Treasure Vault</option>
+                    <option value="Temple or Shrine">Temple or Shrine</option>
+                    <option value="Death Trap">Death Trap</option>
+                    <option value="Planar Gate">Planar Gate</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Chamber Contents</h3>
+                <p>When "Room Type" is too vague.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Trick Objects</h3>
+                <p>Quirky random object with a quirky random trick effect.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="blank">
+        <h1>Flavour</h1>
+        <p>
+            <i>"All is bland when lacking in flavour."</i><br>
+        </p>
+    </div>
+
+    <div class="container twelve">
+        <div class="card">
+            <div class="info">
+                <h3>Dressing</h3>
+                <p>Choose Noise/Air/Odor and roll effect.</p>
+                <select id="dressingType">
+                    <option value="Noise">Noise</option>
+                    <option value="Air">Air</option>
+                    <option value="Odor">Odor</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>General Features</h3>
+                <p>Immersive features and items of a room/dungeon.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Furniture</h3>
+                <p>Roll for the room's general furnishing and appointments.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container thirteenth">
+        <div class="card">
+            <div class="info">
+                <h3>Specific Furnishing</h3>
+                <p>Choose furniture style and roll.</p>
+                <select id="furnitureType">
+                    <option value="Religious">Religious</option>
+                    <option value="Magic">Magic</option>
+                    <option value="Utensils">Utensils</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Container Contents</h3>
+                <p>Roll to see what's inside a random container.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Books and Scrolls</h3>
+                <p>Roll to see what's written in a random book/scroll/tome.</p>
             </div>
             <button class="rollButton" onclick="">ROLL</button>
         </div>

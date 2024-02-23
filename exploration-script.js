@@ -260,6 +260,7 @@
     function rollEnemies() {
         const enemies = [
             "Beast or monstrosity with no particular agenda",
+            "Charmed/Dominated Beast",
             "Corrupted Celestial",
             "Aberration bent on corruption or domination",
             "Fiend bent on corruption or personal gain",
@@ -269,6 +270,12 @@
             "Fey with a mysterious goal",
             "Cultist(s)",
             "Conqueror",
+            "Bandits",
+            "Gangs",
+            "Assassins",
+            "Magic Society",
+            "Insane Wizard",
+            "Necromancer",
             "Person seeking revenge",
             "Main Villain (BBEG) or his minions",
             "Recurring Villain",
@@ -358,6 +365,131 @@
         });
     }
 
+    
+    function rollArea() {
+        const area = [
+            "Being eaten/consumed",
+            "Being killed/butchered/harvested",
+            "Blind/insensate",
+            "Congregating/amassing/clustering",
+            "Decoy/construct/fake/illusion",
+            "Digging/burrowing",
+            "Diseased/Sick",
+            "Poisoned",
+            "Dismembering/taking apart",
+            "Dying",
+            "Dead",
+            "Fighting",
+            "Frenzied/Rabid/Berserk",
+            "Giving Birth/Hatching",
+            "Going in circles",
+            "Lost",
+            "Killing",
+            "Wandering aimlessly",
+            "Hanging around",
+            "Nothing",
+            "Stuck/Tangled",
+            "Trapped/Ensnared/Caged",
+            "Caring for someone/something",
+            "Chasing/pursuing",
+            "Protecting their offspring",
+            "Competing/challenging",
+            "Crying/mourning",
+            "Displaying/signaling/calling",
+            "Feasting/gorging",
+            "Eating small meal",
+            "Fleeing/routing",
+            "Napping",
+            "Resting",
+            "Sleeping",
+            "Foraging/seeking food",
+            "Grooming/peening/dressing up",
+            "Gathering resources",
+            "Huddling/cuddling/comforting",
+            "Marking territory/claiming land",
+            "Having a psychotic episode",
+            "Migrating",
+            "Mating/flirting",
+            "Patrolling/guarding",
+            "Watching/observing",
+            "Stalking",
+            "Being stalked",
+            "Playing/gaming/sporting",
+            "Arguing/conflicted",
+            "Searching/seeking",
+            "Seeking shelter or higher ground",
+            "Tracking",
+            "Stumbling around disoriented",
+            "Taking care of young/children",
+            "Training/trained/domesticated",
+            "Undead version of creature",
+            "Wandering/drifting",
+            "Bathing/bathroom break",
+            "Bestowing honors/awards",
+            "Betraying/backstabbing",
+            "Building/breaking ground",
+            "Bullying/taunting/teasing",
+            "Burying/having funeral",
+            "Buying/making a purchase",
+            "Camping/making camp",
+            "Maintaining tools",
+            "Celebrating/partying/dancing"
+            ]
+        const areaIndex = Math.floor(Math.random() * area.length)
+        blurt({
+            title: 'Creatures',
+            text: area[areaIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+
+    function rollWeird() {
+        const weird = [
+            "Dead magic zone (no spells can be cast)",
+            "Wild magic zone (roll on the Wild Magic Surge table whenever a spell is cast)",
+            "Boulder carved with talking faces (might expend wisdom or fool travelers)",
+            "Crystal cave that mystically answers questions",
+            "Ancient tree containing a trapped spirit",
+            "Battlefield where lingering fog occasionally assumes humanoid forms",
+            "Permanent portal to another plane of existence",
+            "Wishing well",
+            "Giant crystal shard protruding from the ground",
+            "Wrecked ship, which might be nowhere near water",
+            "Haunted hill",
+            "Barrow mound",
+            "Healing fountain (drinking its water counts as Lesser Restoration)",
+            "Giant statue",
+            "Intact circle of standing stones",
+            "Deactivated magic circle",
+            "Abandoned druid ring",
+            "River ferry guided by a skeletal captain",
+            "Field of petrified soldiers or other creatures",
+            "Forest of petrified trees",
+            "Forest of awakened trees",
+            "Canyon containing a dragons' graveyard",
+            "Remains of a gargantuan creature (corpse or bones)",
+            "A hidden Glyph of Warding activated when in near vicinity",
+            "Floating earth mote with a tower on it",
+            "Intact obelisk etched with a warning, historical lore, dedication, or religious iconography",
+            "Chaotic Weather (the area's weather can only be Thunder/Hail/Wildfires/Wild Magic Storms)",
+            "Underground Mind Flayer Colony",
+            "An illusionary town"
+        ]
+        const weirdIndex = Math.floor(Math.random() * weird.length)
+        blurt({
+            title: 'Weird Locales',
+            text: weird[weirdIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+    
+
+    //rolls storms based on selected heavy weather
     function rollStorms() {
         selectedStorm = document.getElementById("weatherEffects").value;
         if(selectedStorm == "Thunder"){
@@ -442,6 +574,7 @@
                 escapable: true
             });
         }
+        //REFERENCE
         /*const weatherIndex = Math.floor(Math.random() * weather.length)
         blurt({
             title: 'Weather',
@@ -450,4 +583,34 @@
             okButtonText: 'Click anywhere to exit',
             escapable: true
         });*/
+    }
+
+
+    function rollTerrain() {
+        const terrain = [
+            "Desecrated Ground - undead have advantage on all saving throws, have two lives (guaranteed bounce-back to full HP when hit points fall to zero), and radiant damage is reduced by half. Holy water purifies 10ft of the area, while the hallow spell purifies it completely. Detect Evil and Good senses this terrain.",
+            "The area's water is frigid - a creature can be immersed in frigid water for a number of minutes equal to its CON score before suffering any ill effects. Each additional minute warrants a DC 10 CON saving throw to avoid gaining 1 level of exhaustion. Creatures with cold resistance/immunity autosucceed.",
+            "Pits of quicksand are set up in the area - roughly a 10-foot-square area, walking into it causes a creature to sink 1d4+1 feet into the quicksand and restrains it. It sinks another 1d4 feet on the start of every turn. The creature can escape by succeeding on a DC 10 + N STR check, where N is equal to the amount of feet it has sunk into the quicksand. The DC changes to 5 + N if another creature is actively helping it.",
+            "Razorvine is growing in abundance - a plant that grows in wild tangles and hedges or clings to buildings, 10-foot-high, 10-foot-wide, 5-foot-thick, AC of 11 and 25 HP, immunity to bludgeoning/piercing/slashing damage, direct contact requires a DC 10 DEX saving throw. Failing it results in 1d10 slashing damage beingtaken.",
+            "Slippery ice covers large chunks of ground - difficult terrain, where someone's first move onto it requires succeeding on a DC 10 Acrobatics check or falling prone.",
+            "High Ground - the enemies have higher ground and roll initiative with advantage.",
+            "Player High Ground - the player has higher ground and rolls initiative with advantage.",
+            "Scattered Props - explosive barrels, abandoned weapons, unused scrolls, bushes and boulders, etc. Several objects fill the battlemap. Interact with them as you please.",
+            "Howling Winds - flying speed is nullified for medium or smaller creatures, walking speed is halved, climbing becomes impossible.",
+            "Fae Grounds - violence committed in the area attracts angry creatures from the Feywild, seeking to punish those who disrupt their natural order.",
+            "Mechanus Grounds - it's impossible to have disadvantage or advantage while in this area, furthermore, any Wild Magic Surge activated in the area attracts displeased creatures from the Mechanus plane, who seek to restore order to their territory.",
+            "Scorched Earth - something or someone sabogated the logistics of the area, e.g. by burning its bridges, setting fire to nature, blowing up buildings, freezing the water, teleporting-in unnatural predators to destabilize ecosystems, or quite literally just scorching the earth",
+            "Hunting territory - a hunter, be it humanoid or beast, is lurking in the area, and will seek an opportunity to strike at the perfect time, by (for example) prioritizing weaker targets, or even waiting until the foes kill each other off.",
+            "Experiment - a scientist/mage/cosmic entity is using the area as a testing environment. If anything goes horribly wrong, an intervention will be issued.",
+            "Holy Ground - paladins and clerics roll initiative with advantage, undead stay far away, and any water present in the area contains healing properties similar to that of a Lesser Restoration spell. Lastly, necrotic damage is reduced by half. Detect Evil and Good senses this terrain.",
+            "Roll two terrain modifiers and add them at once. Can't be both Desecrated and Holy ground though. Furthermore, two high grounds cancel each other out."
+        ]
+        const terrainIndex = Math.floor(Math.random() * terrain.length)
+        blurt({
+            title: 'Terrain',
+            text: terrain[terrainIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
     }
