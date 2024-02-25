@@ -694,7 +694,7 @@
             "A cursed object",
             "Whispering voices",
             "A friendly gathering",
-            "Your reputation preceds you",
+            "Your reputation precedes you",
             "Roll two Special Encounters"
         ]
         const sEncounIndex = Math.floor(Math.random() * sEncoun.length)
