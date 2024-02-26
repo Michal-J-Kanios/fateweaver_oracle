@@ -636,11 +636,42 @@
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
-        }   
+        }
+        else if(selectedBiome == "Hill"){
+            const hillEncounters = [
+                "2d4 Giant Eagles attacking 2 Hill Giants. (75%) The giants are winning (25%) the Eagles are winning.",
+                "2d6 goats and 1d6 giant goats are having a ramming contest. There's a 50% chance that 1d6 of them flee, and a 50% chance they're angered by you meddling in their competition.",
+                "1 or 2 Brown Bears (50% chance) are walking back to their home in the forest",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "test1"
+            ]
+            const hillEncountersIndex = Math.floor(Math.random() * hillEncounters.length)
+            blurt({
+                title: 'Hill Encounter',
+                text: hillEncounters[hillEncountersIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }  
         else{
             blurt({
                 title: 'Error',
-                text: "No biome selected (how did you even manage to do that?)",
+                text: "No biome selected.",
                 type: 'error',
                 okButtonText: 'Uh oh',
                 escapable: true
