@@ -647,7 +647,7 @@
                 "A stampede of herd beasts blocks the path forward.",
                 "1d4 spiders and 3 giant wolf spiders are investigating the area for cave entrances. They seem to be largely skittish.",
                 "Three guards have set up camp on a wooded hill. One of them is trying to spot incoming danger from the surrounding thick fog, while the other two are busy eating their meals.",
-                "1d4 Giant Hyenas are",
+                "1d4 Giant Hyenas are patrolling the area, searching for their next victim. Make a DC 14 stealth check or risk becoming their next meal.",
                 "1d2 randomly generated NPCs are investigating a tomb entrance inside a crumbling well. They may possess a magic item (roll on the 'Magic Item' table in the roleplay section",
                 "A bugbear priest is carving a giant chalk figure into the hillside.",
                 "A manticore is guarding a farmer's field, but available for hire.",
