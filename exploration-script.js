@@ -714,6 +714,71 @@
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
+        }
+        else if(selectedBiome == "Arctic"){
+            const arcticEncounters = [
+                "A white dragon feasts on dead carriage horses in the center of a large field.",
+                "You find your path blocked by a frozen lake, and must complete a skill challenge or a set of skill challenges to cross safely.",
+                "A randomly generated NPC is trapped on a block of ice in the center of a lake, and will fall in without help.",
+                "A blizzard has blown in, severely limiting visibility.",
+                "Oh no! A hail! Roll for Hail effects on the ''Storms'' table.",
+                "You are surprised by a puppy made of animated lichen. It's very friendly.",
+                "A cold mist surrounds you. Out of the mist comes out a hazy Water Elemental, seeking to absorb the water out of your body. The creature can use a bonus action to turn into mist, and move for an additional 30ft without provoking opportunity attacks. Furthermore, non-magical weapon attack rolls made against it have disadvantage.",
+                "A band of Orc raiders arrives with the sound of a war horn. Their chief is riding on a polar bear.",
+                "You see a merchant with a sled pulled by a giant elk. If you shout for him, he will make a turn and offer some wares. 50% for his Elk to sprain his ankle while making the turn. If it does sprain its ankle, he will give you a free common magic item and 150 GP if you help the creature (DC 20 Medicine check).",
+                "A baby yeti is crying, presumably because it lost its mother. Will you help it find its potentially agressive mother, or leave it to die?",
+                "You meet the hunting party of a small artcic tribe. They are willing to trade.",
+                "You stumble upon a small settlement of huts full of hunters that carve holes in the ice. They live with some druids that can call to giant whales who live under the ice and contain the wisom of the deep if you can speak to them.",
+                "You hear cries of help and see a woman drowning inside a cracked, icy lake. Upon closer inspection, she is surrounded by dead bodies, and reveals herself to be a rather nasty Sea Hag. If you went to help her, you are grappled, and must succeed on an athletics skill contest against the hag. If you have any allies with you, 3 more Sea Hags appear.",
+                "You come across a lake that is somehow not frozen. In the middle of the lake, a small, icy island floats quietly, absolutely stacked with valuables. If you disturb the water while on your way to the island, you will get surprise-attacked by a Water Weird that has been guarding these valuables, but has long since outlived his creator. Every two rounds, a new Water Weird will spawn until you either die or leave the area.",
+                "You find an icy cave with a recently lit campfire and four bedrolls inside it. Your character doesn't know this, but if you try to rest here, the campfire will slowly reveal a Gelatinous Cube frozen into the bottom of the cave.",
+                "You find a random treasure (roll in Dungeon section) encased in ice. 50% chance that the ice is a frozen water elemental, waiting to be thawed.",
+                "You are approached by a gang of Goblins in sleds pulled by Worgs. They demand you surrender your weapons, give them all of your money, and let them take your weakest party member as a slave.",
+                "A dragon flies over, cuasing an avalanche. Succeed on a DC 15 DEX saving throw or get trapped under the snow, awaiting either help or a painless death.",
+                "A pack of 1d4+2 wolves has been following you for quite a while, and you've only just noticed. They are currently encircling you. What will you do?",
+                "You come across a sunken ship, frozen under the ice. Its treasures should still be inside...",
+                "You encounter a frozen lake with a massive dark shape in the middle, and on the frozen surface you spot cultists chanting and sacrifing frozen corpses to the aforementioned dark blob in the ice.",
+                "A lone herder asks your party to help him catch 4 specific reindeer. 50% chance he will offer a lasso to help with the task. Those 8 reindeer have different shaped ears than others (DC 14 Perception). Catching them has a DC of 15, with the ability depending on your method. Doing the same thing every time increases the DC by 1, so think creatively or roll well.",
+                "An old sailing ship has been locked in the ice for generations. Only the skeletons of the crew remain on board, along with a hold full of gold and treasure. At it's center, the skull of a dragon. The treasure, however, is cursed, although your character doesn't know that. Should one piece of gold leave the hold and make its way topside, the skeletons come to life, and should that piece of gold leave the ship, a giant skeletal dragon shall rise from within the ship to reclaim its treasure.",
+                "A Bheur Hag starts stalking you. She won't directly attack unless you attack her first, but she will attempt to sabotage you at every opportunity.",
+                "You encounter a wandering, randomly generated NPC who's searching for a lost ruin that is supposed to be in this area.",
+                "You stumble upon a colossal igloo with it's only entrance being at the top. Inside the igloo is a Silver Dragon that has been protecting the people inside for generations. They worship it as a god and have no concept of the outside world.",
+                "You spot a strange man just ahead. Upon closer inspection, you notice that it's just a snowman with a cloak on it. Roll a 1d20. On a NAT 1, the cloak is actually a Robe of Useful Items",
+                "As you're walking, your foot gets stuck in a pond that instantly freezes over. You are then jumped by 1d4+1 Ice Mephits, who are maniacally cackling while thinking what they'll do with you. To break free, you must succeed on a DC 18 STR saving throw. While you are stuck, your movement is halted and your attack rolls are made at disadvantage.",
+                "Your party is trudging across the ice alongside a freezing lake, and suddenly the ice cracks, leaving you stuck on an ice raft in the middle of a dangerously cold body of water. If you have other party members, they are separated from you.",
+                "A crazed Wizard has made an illusion around your party, making you walk in circles.",
+                "A white ooze is disguised as a snow drift and you just walked into it. Congrats!",
+                "Up ahead, you hear a Remorhaz and a dragon fighting, but cannot see them yet.",
+                "A band of Frost Giant hunters scour the icy wastes for Remorhaz nests and eggs. They seem to have found a few young Remorhazes, but then they move aside, revealing their mother, beaten and nearing death.",
+                "You stumble upon a Remorhaz teaching its young to prey on a herd of Elks.",
+                "You feel intense vibrations from deep below. A Remorhaz is burrowing its way towards you.",
+                "You encounter a Remorhaz finishing off a polar bear. You can still try to run while it's feeding, but fail a DC 15 Stealth check, and it spots you.",
+                "You meet a lonely Frost Giant, separated from his crew. He tells you a story about glory or conquest if you're willing to listen. If you ever roll this encounter again, you'll meet the same giant, who will be friendly and will ask you how you've been since the two of you have last met.",
+                "You hear the war horns that heralds a march of Frost Giant warriors coming your way. Hopefully, they're not after you, specifically.",
+                "You encounter two Frost Giants surrounded by slightly smaller Frost Giants. The bigger ones appear to be fighting for dominance in their clan.",
+                "Your party stumbles upon a village of people who graciously offer you and you allies food and shelter. 50% chance they're hiding something, which is, the fact that they're all werebears and, while Neutral-Good, are wary of outsiders discovering their secret.",
+                "A barren field where will-o'-wisps appear at night, these wisps trail colors behind them like the aurora. A massive battle happened here, but who was fighting and just how long ago? Investigating the area might reveal some details.",
+                "The temperature drops DRAMATICALLY, making hypothermia/frost damage even more potent than before.",
+                "A ripple waves against the icy ground, as the already cold air drops even more, and your party is temporarily warped to the Elemental Plane of Ice.",
+                "You realize you are being stalked night and day by an enormous dire polar bear.",
+                "A man encounters the party stark naked and raving mad. He's quite likely suffering from hypothermia. If you can help him survive, he will lead you and your allies to a village for refuge. In there, you'll find his family has been waiting for him, who are all very grateful for your help.",
+                "Your party comes across an impass while crossing the ice. The ice has cracked, and several floating ice islands litter your path. Large enough to hold 4 medium creatures as they cross, said creatures must hop from island to island to cross this frozen body of water (DC 10 Acrobatics). Falling in results in hypothermia or 6d6 cold damage, or even death if nobody helps the person who just fell.",
+                "On the horizon, you spot a castle made of ice. 50% chance it's an Ice Hag's illusion, leading you into a trap, and 50% chance it's actually an Ice Castle where Frost Giants store the loot from their plunder.",
+                "You find an extinct creature, encased in ice for Gods know how long.",
+                "An arctic fox is chaing a snowshoe hare.",
+                "You and your party were actually dreaming for quite a while. You wake up at a secluded camp surrounded by magically enchanted snowmen (using the Scarecrow stat block). They act as guards for an Ice Hag, beckoning you to come closer to the witch's lair.",
+                "You come across a caravan of pilgrims out to see a variant of the aurora that only comes out once a decade. They'll gladly take on anyone who wants to join, and can share valuable tips about food caches and shelter in the nearby area.",
+                "Your party is being stalked by a chittering pack of ice and steam mehits, who are looking for victim upon which they can enact petty evils. They try to keep themselves hidden and motionless when they think your party might detect them, but swarm your party when they realize they've been noticed.",
+                "A clan of Frost Giants, carrying sufficient amount of meat for them off a recent kill, come across your party. They demand your party retreat, or prove your might as warriors, throwing a few of their champions/captives/pets to fight. If you succeed, your party can pass, but is also invited for a feast."               
+            ]
+            const arcticEncountersIndex = Math.floor(Math.random() * arcticEncounters.length)
+            blurt({
+                title: 'Arctic Encounter',
+                text: arcticEncounters[arcticEncountersIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
         }  
         else{
             blurt({
