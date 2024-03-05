@@ -7,7 +7,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="blurt/blurt.min.css">
+    <script src="blurt/blurt.min.js"></script>
     <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
+    <script src="npc-generator-script.js"></script>
     <link rel="stylesheet" href="npc-style.css">
     <title>Fate Weaver</title>
     
@@ -24,7 +27,7 @@
                     <h3>Race</h3>
                     <p>Choose the character's race.</p>
                 </div>
-                <select name="raceSelect">
+                <select id="raceSelect">
                     <option value="Random">Random</option>
                     <option value="Human">Human</option>
                     <option value="Asmodeus Tiefling">Asmodeus Tiefling</option>
@@ -81,7 +84,7 @@
                     <h3>Class</h3>
                     <p>Choose the character's class.</p>
                 </div>
-                <select name="classSelect">
+                <select id="classSelect">
                     <option value="Random">Random</option>
                     <option value="Fighter">Fighter</option>
                     <option value="Wizard">Wizard</option>
@@ -103,7 +106,7 @@
                     <h3>Alignment</h3>
                     <p>Choose the character's alignment.</p>
                 </div>
-                <select name="alignmentSelect">
+                <select id="alignmentSelect">
                     <option value="Random">Random</option>
                     <option value="Lawful Good">Lawful Good</option>
                     <option value="Neutral Good">Neutral Good</option>
@@ -124,7 +127,7 @@
                     <h3>Background</h3>
                     <p>Choose the character's past.</p>
                 </div>
-                <select name="pastSelect">
+                <select id="pastSelect">
                     <option value="Random">Random</option>
                     <option value="Acolyte">Acolyte</option>
                     <option value="Sage">Sage</option>
@@ -153,7 +156,7 @@
                     <h3>Strength</h3>
                     <p>Choose the character's best stat.</p>
                 </div>
-                <select name="highSelect">
+                <select id="highSelect">
                     <option value="Random">Random</option>
                     <option value="Strength">Strength</option>
                     <option value="Dexterity">Dexterity</option>
@@ -168,7 +171,7 @@
                     <h3>Weakness</h3>
                     <p>Choose the character's worst stat.</p>
                 </div>
-                <select name="dumpSelect">
+                <select id="lowSelect">
                     <option value="Random">Random</option>
                     <option value="Strength">Strength</option>
                     <option value="Dexterity">Dexterity</option>
@@ -181,7 +184,7 @@
         </div>
 
         <div class="buttons">
-            <button id="rollButton">Roll character</button>
+            <button id="rollButton" onclick="rollChar();">Roll character</button>
         </div>
     </div>
 </body>
