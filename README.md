@@ -12,10 +12,10 @@ Roll on compact roll tables and string the results together using your imaginati
 - What to do next?
 - When to make something happen?
 - What should happen during exploration?
-### Have you ever wanted to play D&D solo for whatever reason?
-- Friends don't want to play D&D?
-- Never had friends to begin with?
-- Want to optimize character builds or engage in creative writing?
+### Have you ever wanted to play D&D solo, because...
+- Your friends don't want to play D&D?
+- You never had friends to begin with?
+- You want to try out character builds or engage in creative writing?
 # Whatever the reason, Fate Weaver has got you covered!
 With multiple compact roll tables available at the push of a button, you too can enhance your D&D sessions through the power of randomisation!
 ### Have you ever TRIED to play solo?
