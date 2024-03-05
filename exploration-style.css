@@ -88,6 +88,18 @@ p {
     transition: all 0.375s;
 }
 
+.container .rollButton {
+    display: inline-block;
+    background-color: #07170b;
+    color: #F6EDEA;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    font-size: 1.2rem;
+}
+
 .blank, .blank-2 {
     width: 100%;
     min-height: 50vh;
@@ -169,6 +181,7 @@ p {
     margin-bottom: 1.5rem;
     width: 70%;
     cursor: pointer;
+    font-family: 'Poppins', 'sans-serif';
 }
 
 .card a {

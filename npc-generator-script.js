@@ -245,7 +245,7 @@ const randomClass = [
 "Warlock",
 "Monk",
 "Bard",
-"Artifcer",
+"Artificer",
 ]
 
 const randomAlignment = [
