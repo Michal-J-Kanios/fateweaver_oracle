@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="npc-style.css">
+    <title>Fate Weaver</title>
+    
+</head>
+<body>
+
+    <div class="start-card">
+        <h2 id="fateWeaver">NPC Generator</h2>
+        <a href="index.html" class="iconZ" target="_blank"><i class="fa-solid fa-house"></i></a>
+        <p>Ready to make a living, breathing NPC on the fly? Adjust your criteria to better fit your idea of the NPC, or just press the roll button without any changes and let Fate Weaver do its magic!</p>
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h3>Race</h3>
+                    <p>Choose the character's race.</p>
+                </div>
+                <select name="raceSelect">
+                    <option value="Random">Random</option>
+                    <option value="Human">Human</option>
+                    <option value="Asmodeus Tiefling">Asmodeus Tiefling</option>
+                    <option value="Zariel Tiefling">Zariel Tiefling</option>
+                    <option value="Mephisto Tiefling">Mephisto Tiefling</option>
+                    <option value="Half-Elf">Half-Elf</option>
+                    <option value="High Elf">High Elf</option>
+                    <option value="Wood Elf">Wood Elf</option>
+                    <option value="Drow">Drow</option>
+                    <option value="Mountain Dwarf">Mountain Dwarf</option>
+                    <option value="Hill Dwarf">Hill Dwarf</option>
+                    <option value="Duergar">Duergar</option>
+                    <option value="Chromatic Dragonborn">Chromatic Dragonborn</option>
+                    <option value="Metallic Dragonborn">Metallic Dragonborn</option>
+                    <option value="Variant Human">Variant Human</option>
+                    <option value="Lightfoot Halfling">Lightfoot Halfling</option>
+                    <option value="Stout Halfling">Stout Halfling</option>
+                    <option value="Half-Orc">Half-Orc</option>
+                    <option value="Orc">Orc</option>
+                    <option value="Rock Gnome">Rock Gnome</option>
+                    <option value="Forest Gnome">Forest Gnome</option>
+                    <option value="Deep Gnome">Deep Gnome</option>
+                    <option value="Genasi">Genasi</option>
+                    <option value="Changeling">Changeling</option>
+                    <option value="Centaur">Centaur</option>
+                    <option value="Eladrin">Eladrin</option>
+                    <option value="Fairy">Fairy</option>
+                    <option value="Githyanki/Githzerai">Githyanki/Githzerai</option>
+                    <option value="Goliath">Goliath</option>
+                    <option value="Tabaxi">Tabaxi</option>
+                    <option value="Tortle">Tortle</option>
+                    <option value="Harengon">Harengon</option>
+                    <option value="Kobold">Kobold</option>
+                    <option value="Goblin">Goblin</option>
+                    <option value="Hobgoblin">Hobgoblin</option>
+                    <option value="Bugbear">Bugbear</option>
+                    <option value="Aasimar">Aasimar</option>
+                    <option value="Aarakocra">Aarakocra</option>
+                    <option value="Lizardfolk">Lizardfolk</option>
+                    <option value="Yuan-Ti">Yuan-Ti</option>
+                    <option value="Kenku">Kenku</option>
+                    <option value="Minotaur">Minotaur</option>
+                    <option value="Satyr">Satyr</option>
+                    <option value="Sea Elf">Sea Elf</option>
+                    <option value="Shadar-Kai">Shadar-Kai</option>
+                    <option value="Triton">Triton</option>
+                    <option value="Shifter">Shifter</option>
+                    <option value="Warforged">Warforged</option>
+                    <option value="Firbolg">Firbolg</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Class</h3>
+                    <p>Choose the character's class.</p>
+                </div>
+                <select name="classSelect">
+                    <option value="Random">Random</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Wizard">Wizard</option>
+                    <option value="Rogue">Rogue</option>
+                    <option value="Cleric">Cleric</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Sorcerer">Sorcerer</option>
+                    <option value="Barbarian">Barbarian</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Monk">Monk</option>
+                    <option value="Bard">Bard</option>
+                    <option value="Artificer">Artificer</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Alignment</h3>
+                    <p>Choose the character's alignment.</p>
+                </div>
+                <select name="alignmentSelect">
+                    <option value="Random">Random</option>
+                    <option value="Lawful Good">Lawful Good</option>
+                    <option value="Neutral Good">Neutral Good</option>
+                    <option value="Chaotic Good">Chaotic Good</option>
+                    <option value="Lawful Neutral">Lawful Neutral</option>
+                    <option value="True Neutral">True Neutral</option>
+                    <option value="Chaotic Neutral">Chaotic Neutral</option>
+                    <option value="Lawful Evil">Lawful Evil</option>
+                    <option value="Neutral Evil">Neutral Evil</option>
+                    <option value="Chaotic Evil">Chaotic Evil</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container second">
+            <div class="card">
+                <div class="info">
+                    <h3>Background</h3>
+                    <p>Choose the character's past.</p>
+                </div>
+                <select name="pastSelect">
+                    <option value="Random">Random</option>
+                    <option value="Acolyte">Acolyte</option>
+                    <option value="Sage">Sage</option>
+                    <option value="Urchin">Urchin</option>
+                    <option value="Noble">Noble</option>
+                    <option value="Charlatan">Charlatan</option>
+                    <option value="Faceless">Faceless</option>
+                    <option value="Criminal">Criminal</option>
+                    <option value="Knight">Knight</option>
+                    <option value="Soldier">Soldier</option>
+                    <option value="Folk Hero">Folk Hero</option>
+                    <option value="Gladiator">Gladiator</option>
+                    <option value="Entertainer">Entertainer</option>
+                    <option value="Guild Artisan">Guild Artisan</option>
+                    <option value="Haunted One">Haunted One</option>
+                    <option value="Pirate">Pirate</option>
+                    <option value="Sailor">Sailor</option>
+                    <option value="Hermit">Hermit</option>
+                    <option value="Outlander">Outlander</option>
+                    <option value="Anthropologist">Anthropologist</option>
+                    <option value="Archeologist">Archeologist</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Strength</h3>
+                    <p>Choose the character's best stat.</p>
+                </div>
+                <select name="highSelect">
+                    <option value="Random">Random</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Dexterity">Dexterity</option>
+                    <option value="Constitution">Constitution</option>
+                    <option value="Intelligence">Intelligence</option>
+                    <option value="Wisdom">Wisdom</option>
+                    <option value="Charisma">Charisma</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Weakness</h3>
+                    <p>Choose the character's worst stat.</p>
+                </div>
+                <select name="dumpSelect">
+                    <option value="Random">Random</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Dexterity">Dexterity</option>
+                    <option value="Constitution">Constitution</option>
+                    <option value="Intelligence">Intelligence</option>
+                    <option value="Wisdom">Wisdom</option>
+                    <option value="Charisma">Charisma</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="rollButton">Roll character</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -69,17 +69,6 @@ p {
     font-size: 18px;
 }
 
-.container .rollButton {
-    display: inline-block;
-    background-color: #07170b;
-    color: #F6EDEA;
-    text-decoration: none;
-    padding: 0.7rem 2rem;
-    font-weight: 700;
-    border-radius: 0.7rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    font-size: 1.2rem;
-}
 
 .container #domek {
     display: inline-block;
