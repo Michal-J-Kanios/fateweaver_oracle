@@ -4,7 +4,7 @@ Roll on compact roll tables and string the results together using your imaginati
 ### Project is open source. Feel free to reflavour it to other TTRPG systems, as long as you give proper credit :)
 ![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)
 
-## Your party just went somewhere you have no content for and you can't find...
+## Your adventure went off the rails and you can't find...
 - Any random encounter tables?
 - An NPC generator?
 - A settlement designer?
@@ -12,10 +12,10 @@ Roll on compact roll tables and string the results together using your imaginati
 - What to do next?
 - When to make something happen?
 - What should happen during exploration?
-### Have you ever wanted to play D&D solo for whatever reason?
-- Friends don't want to play D&D?
-- Never had friends to begin with?
-- Want to optimize character builds or engage in creative writing?
+### Have you ever wanted to play D&D solo, because...
+- Your friends don't want to play D&D?
+- You never had friends to begin with?
+- You want to try out character builds or engage in creative writing?
 # Whatever the reason, Fate Weaver has got you covered!
 With multiple compact roll tables available at the push of a button, you too can enhance your D&D sessions through the power of randomisation!
 ### Have you ever TRIED to play solo?
