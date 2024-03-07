@@ -900,12 +900,70 @@ const randomLow = [
         "resolve a dispute.",
         "make an agreement.",
         "pay a debt.",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "protect a secret.",
+        "enrich themselves.",
+        "regain honor stolen by someone else.",
+        "regain lost honor.",
+        "protect family interests.",
+        "avenge a wrong.",
+        "fulfill a duty",
+        "get revenge on someone.",
+        "attain mystical knowledge.",
+        "secure provisions.",
+        "release an ancient evil, for whatever reason.",
+        "seize power.",
+        "seek a truth.",
+        "create a specific item.",
+        "advance their status.",
+        "harm a rival.",
+        "refute a falsehood.",
+        "find a friend.",
+        "protect a person.",
+        "fulfill the commands of their patron (even more so if they're a Warlock).",
+        "undermine the status quo.",
+        "protect the status quo.",
+        "cause a dispute.",
+        "collect a debt.",
+        "defend a place.",
+        "help a friend.",
+        "solve a dispute.",
+        "prevent war or conflict.",
+        "steal from former employer",
+        "protect an organization.",
+        "seek shelter from someone/something.",
+        "cause dishonor/embarrassment to their enemy.",
+        "find lost knowledge.",
+        "rescue a loved one.",
+        "rescue a family member.",
+        "rescue a close friend.",
+        "protect the world from an ancient evil.",
+        "sabotage an organization.",
+        "recover a lost item.",
+        "gain glory.",
+        "gain experience.",
+        "grow as a person.",
+        "find a lover.",
+        "find a romantic partner.",
+        "become a hero.",
+        "redeem themselves.",
+        "lift a curse.",
+        "acquire a blessing.",
+        "prevent an assassination.",
+        "get involved in political intrigue.",
+        "get stronger to win an important duel.",
+        "fulfill a prophecy.",
+        "negotiate a truce with an enemy.",
+        "obtain a wish or a wish spell.",
+        "earn funds.",
+        "fulfill a dream.",
+        "go through with an ambition.",
+        "finish their project.",
+        "find happiness.",
+        "find/define the meaning of life.",
+        "study under a mentor.",
+        "become a mentor to someone.",
+        "become the best at something they do.",
+        "rescue a person important to them."
     ]
 
     
@@ -926,6 +984,8 @@ function rollChar() {
         const randomPastIndex = Math.floor(Math.random() * randomPast.length)
         const randomHighIndex = Math.floor(Math.random() * randomHigh.length)
         const randomLowIndex = Math.floor(Math.random() * randomLow.length)
+        
+        const characterGoalsIndex = Math.floor(Math.random() * characterGoals.length)
 
         //Randomization
 
@@ -1059,7 +1119,7 @@ function rollChar() {
 
         blurt({
             title: 'Your NPC:',
-            text: `${selectedAlignment} ${selectedRace} ${selectedClass} (${selectedPast}) whose highest statistic is ${selectedHigh} and lowest is ${selectedLow}. ${selectedBonds} ${selectedFlaws} ${selectedTraits}`,
+            text: `${selectedAlignment} ${selectedRace} ${selectedClass} (${selectedPast}) whose highest statistic is ${selectedHigh} and lowest is ${selectedLow}. ${selectedBonds} ${selectedFlaws} ${selectedTraits} Their goal is to ${characterGoals[characterGoalsIndex]}`,
             type: 'warning',
             okButtonText: 'Click anywhere to exit',
             escapable: true
