@@ -310,16 +310,114 @@ const randomLow = [
     "They watch over those they care for as if they were pups.",
     "They will crush their enemies, with fury and power.",
     "They place no stock in wealthy or well-mannered folk.",
+    "They are a gentle giant.",
+    "They use their strength as last resort.",
     "They believe money and manners won't save you from a hungry owlbear.",
     "They work hard so that they can play hard when the work is done.",
-    "They are a remarkable tactician",
-    "They tend to be rowdy and aggressive",
+    "They are a remarkable tactician.",
+    "They tend to be rowdy and/or aggressive.",
     "They have a crude sense of humor.",
     "They are confident and assertive.",
-    "They speak in short sentences or with improper grammar.",
+    "They speak in short sentences and/or with improper grammar.",
     "They are very ambiguous when they lie.",
-    "They are easily taunted, provoked, and led astray."
+    "They are easily taunted, provoked, and led astray.",
+    "They pride themselves in being able to lift heavy objects.",
+    "They are a professional athlete.",
+    "They are battling a physical disability, and winning.",
+    "Despite their strength, they are ashamed of their physicality.",
+    "They feel like their strength is never enough or that they can always be stronger.",
+    "They are incredibly vain and keep admiring their own silhouette.",
+    "They appreciate a good silhouette, and will frequently compliment other strong people.",
+    "Their strength is there to better nurture the ones they care for.",
+    "They tend to overly rely on their strength and end up acting without thinking.",
+    "They have a hard time controlling their strength.",
+    "They often break things by accident, not realizing how brittle everything is when you're as strong as them.",
+    "They are much stronger than they appear.",
+    "They acquired their strength to make up for a mental weakness.",
+    "Their strength comes from motivation and determination.",
+    "Their strength is unquestionable, but they pay no attention to their silhouette.",
+    "While they ARE strong, they're not as tough as their physique would suggest.",
+    "They are rough, tough and grizzled.",
+    "They are brave and daring.",
+    "They are serious and quiet, but warm and kind inside.",
+    "They are serious and quiet, but broken inside.",
+    "Their body is a temple, built from strict diets, difficult training regiments and consistency.",
+    "They could push a boulder up a hill even if said boulder had the rest of the party sitting on it.",
+    "They can pick up and handle an average-sized person like an object."
     ];
+
+  const dexTraits = [
+    "They are quick to flee if they know they cannot handle something.",
+    "They like to walk when they have to think and they hate being tied up or restrained.",
+    "Their friends know they can rely on them, no matter what.",
+    "They have great reflexes.",
+    "They are a talented acrobat.",
+    "They prefer to keep both strangers and their enemies at a distance.",
+    "They are unpredictable, and will keep everyone guessing on what they'll do next.",
+    "They have great aim with ranged weapons.",
+    "They have a keen sight.",
+    "They are always quick to act.",
+    "They gracefully avoid their responsibilities.",
+    "Their hands are remarkably quick, moving faster than most people can comprehend.",
+    "They prefer to approach problems with stealth first.",
+    "Their reaction time is almost too quick, making them shoot first and ask questions later.",
+    "They're practically invincible when they're sneaking.",
+    "They move gracefully and with utmost elegance.",
+    "They move like a dancer and put heavy emphasis on theatrics in everything they do.",
+    "They move like a ballerina and prefer keeping their enemies on their toes.",
+    "They move without grace, but with utmost swiftness and practicality, paying no attention to theatrics.",
+    "They can run faster than most.",
+    "Their wits and quicker and sharper than most.",
+    "They act daring, because they generally believe they can get away with anything.",
+    "They usually try to dodge the consequences of their actions",
+    "When needed, they act swiftly and waste no time for theatrics.",
+    "Their jokes often come off as disrespectful, even when they're not meant to be.",
+    "They always check dungeon rooms for traps before venturing forth.",
+    "They always loot their enemies.",
+    "Whenever they're about to sneak through a door, they'll stop and listen if there's someone inside.",
+    "They like to sneak in using absurd methods, like falling from chimneys, being smuggled in a barrel, or using large distractions.",
+    "They are quick to spot any and all traps.",
+    "They are quick to point out important details.",
+    "They are battling a physical disability, and winning.",
+    "It's difficult to surprise them in any way."
+  ]
+
+  const conTraits = [
+    "They are at the peak of their physical health.",
+    "They like to snack.",
+    "They have a hearty appetite.",
+    "They maintain good skincare.",
+    "They have an incredible mental fortitude.",
+    "They're methodical and careful, unless they've had anything at all to drink.",
+    "They have a high alcohol tolerance.",
+    "They cannot get drunk.",
+    "They had never broken a bone in their entire life, and are convinced they never will.",
+    "They exude positive energy.",
+    "Their presence is either comforting or intimidating (depending on alignment).",
+    "They have a strong stomach, and as such, they never contract foodborne ilnesses.",
+    "They seldom get sick and almost never fall ill.",
+    "They can withstand even the harshest of weathers.",
+    "They can take multiple people at once.",
+    "They give advice in proverbs that they don't understand.",
+    "They are subconsciously clingy and have a hard time understanding physical boundaries.",
+    "They appear ignorant, but they act that way by choice.",
+    "They are humble and content.",
+    "They trained their mind to be able to experience blissful ignorance and childlike wonder again.",
+    "They have a stoic outlook on life.",
+    "They are stubborn and generally won't budge.",
+    "They are easily distracted with food.",
+    "They're an obnoxious nutritionist that won't let others eat in peace.",
+    "They are disciplined and easily quit bad habits.",
+    "They are much stronger than they appear.",
+    "They were lucky to receive phenomenal genes from their parents.",
+    "They are battling a physical disability, and winning.",
+    "They can eat all they want and never get fat.",
+    "Their body is sturdy and durable.",
+    "Their body is a carefully constructed temple with great emphasis on balance - a result of many diets, strict training regiments, and psychological affirmations.",
+    "They are a professional athlete in some niche, weight-based sport.",
+    "They are incredibly stoic and can shrug off seemingly anything.",
+    "They can laugh about anything."
+  ]
 
   const intTraits = [
     "There's nothing they like more than a good mystery.",
@@ -332,7 +430,31 @@ const randomLow = [
     "In their mind, they can visualize several scenarios playing out at once.",
     "There is close to nothing they can't imagine.",
     "They seem either shy or paranoid.",
+    "They overanalyze simple problems and unknowingly pick harder, more complicated solutions.",
+    "They frequently experience information paralysis.",
+    "The purposefully appear ignorant or less intelligent than they really are, for reasons yet unknown.",
+    "They have an incredible mental fortitude.",
+    "They are slow with mathematics and algorhythms, but know tons of lore.",
+    "They're not well versed in lore or history, but are otherwise great at mathematics, algorhythms and doing calculations on the fly.",
+    "They let their feelings cloud their better judgement.",
+    "Their judgement transcends feelings.",
+    "They have an innate talent for studying magic, whether they realize it or not.",
+    "They speak using sarcasm and witty remarks.",
+    "They feel the urge to correct every mistake they read or hear.",
+    "They are much more intelligent than they appear.",
+    "Their social awkwardness stems from overthinking simple social scenarios.",
+    "They are a humble genius.",
+    "They are a prideful genius.",
+    "Despite their intellect, they are humble and content.",
+    "They are very patient to those who aren't as intelligent, and often help them out.",
+    "They get easily frustrated with people who aren't as intelligent as them.",
+    "They expect everyone to know the things they do.",
+    "They are aware not everyone knows the things they do. Consequently, they make an effort to present their ideas clear enough for everyone to understand.",
     "They seemingly know the answers to everything.",
+    "They present even their most tame ideas like a mad scientist.",
+    "They are a mad scientist of sorts.",
+    "They are incredibly passionate about a specific field of study and will rave on it for hours on end.",
+    "Their field of study is their entire personality.",
     "They like to walk when they have to think and they hate being tied up or restrained.",
     "They're methodical, calculating, and exacting... unless they've had anything at all to drink.",
     "They're methodical, calculating, and exacting.",
@@ -350,7 +472,14 @@ const randomLow = [
     "They use big words to represent their intellectual superiority.",
     "They use smaller, simpler words when talking to less-intelligent people, so they can better understand them.",
     "They only ever open up to close friends.",
+    "They act smug no matter what they get themselves into.",
+    "They communicate through sarcasm and/or witty banter.",
+    "The way they talk makes them look arrogant. They probably are though...",
     "They are very specific when they lie.",
+    "They have a funny accent.",
+    "They make up their own words whenever they can.",
+    "They are eccentric and hard to understand.",
+    "They are a nihilist with motives above understanding.",
     "They hyperfixate on one thing for a while, and then move on to something completely different."
     ];
 
@@ -359,8 +488,41 @@ const randomLow = [
         "They are confident and brave.",
         "They have a way with words.",
         "They have a charming accent.",
+        "They are eccentric and hard to understand.",
+        "Their eccentricities are charming instead of off-putting.",
+        "They have an adorable childhood habit or trait they're greatly embarrassed of.",
+        "It's hard to tell whether they're being sarcastic or genuine.",
+        "They put on so many masks it's hard to tell who they really are on the inside.",
+        "Their personality shifts depending on who they're talking to.",
         "They are good at flirting.",
+        "They are acutely aware of great comedic timing.",
+        "Their comedic timing is miserable, but they sell their jokes with their confidence.",
         "They are a great leader.",
+        "They move like a dancer and put heavy emphasis on theatrics in everything they do.",
+        "They overuse flattery.",
+        "They act lively and gleefully on the outside, but are dead on the inside.",
+        "They use humour to mask that they're dead inside.",
+        "They are alarmingly beautiful.",
+        "They are conventionally attractive.",
+        "They are unconventionally attractive.",
+        "They act cute and adorable to get what they want.",
+        "They view sex as a tool for tipping the scales of power.",
+        "They are romantic and quite erotic.",
+        "They are very erotic, but without romantic feelings.",
+        "They are incredibly romantic, but show no interest in eroticism.",
+        "Their charisma often leads others to mistakenly believe they're a flirt or a seducer, when in reality, they prefer platonic relationships.",
+        "They maintain excellent skincare.",
+        "They're naturally talented at acting.",
+        "Their disguises are almost always convincing and on point.",
+        "The way they talk makes them look arrogant. They probably are though...",
+        "They always have a slight, sardonic smile that makes people uneasy.",
+        "They act smug and saucy no matter what they get themselves into.",
+        "They are generally careless and easy-going.",
+        "They use humour to cope with trauma.",
+        "Their charisma is only surface level and they break down whenever things don't go their way.",
+        "They act smug at first, but lose that attitude once they're put in a tight spot.",
+        "Their jokes often come off as disrespectful, even when they're not meant to be.",
+        "They communicate through sarcasm and/or witty banter.",
         "There is close to nothing that they can't imagine",
         "Their words inspire those who hear them.",
         "They have a lovely singing voice.",
@@ -368,6 +530,7 @@ const randomLow = [
         "Their voice is very loud and clear.",
         "They excel in humor.",
         "Their humour is considered offensive.",
+        "They like to sneak in using absurd methods, like falling from chimneys, being smuggled in a barrel, or using large distractions.",
         "They convincingly pretend they like meeting new people for formality's sake, but would rather be left alone.",
         "They are open about everything with everyone.",
         "They are open about everything with friends and colleagues.",
@@ -389,10 +552,12 @@ const randomLow = [
         "They are always aware of their surroundings.",
         "They seldom let their guard down.",
         "They don't speak much.",
+        "Sometimes they speak in wits and sarcasm, usually with stellar comedic timing.",
         "They prefer to speak in short, easily-understandable sentences.",
         "They can discretely communicate with animal noises or some other code.",
         "They are great at improvising strategies.",
         "They never lie.",
+        "Their wits are sharp.",
         "They can create makeshift equipment out of seemingly anthing.",
         "Their expression never matches their feelings, be it intentionally to mask their nature, or unintentionally because of a habit.",
         "They never get lost with maps.",
@@ -408,11 +573,20 @@ const randomLow = [
         "They know a lot about various herbs and what they're used for.",
         "They seem to hold immense knowledge of just about every terrain type they're traveling through.",
         "They have a keen eye for traps.",
+        "They shoot first and ask questions later.",
+        "They can usually tell when people are lying.",
+        "Everything they do looks as if it were planned, even if it wasn't.",
+        "They make whatever they're good at doing look badass.",
+        "They maintain a facade of cluelessness, either to mess with people annoyed by it or to surprise their enemies.",
+        "They give advice in proverbs they don't understand, but think suit the situation.",
+        "They appear ignorant, but they act that way by choice.",
+        "They are humble and content.",
+        "They trained their mind to be able to experience blissful ignorance and childlike wonder again.",
         "They always check to make sure if their enemies are truly dead.",
         "They listen at the step of every dungeon door, and knock at every normal door before they enter.",
         "They often forget their manners, but not maliciously.",
         "They never say the full truth, but technically aren't lying.",
-        "They quickly notice innuendos, doublespeak, sarcasm and can usually when they're being deceived.",
+        "They quickly notice innuendos, doublespeak, sarcasm and can usually tell when they're being deceived.",
         "They have a sixth sense for sensing when something is fishy or dangerous."
     ]
 
@@ -441,7 +615,7 @@ const randomLow = [
         "They believe that if they follow their own path they will become who they were meant to be.",
         "They are obsessively focused on uncovering their past.",
         "They believe bettering yourself is essential in life.",
-        "They possess a very Don Quixote-esque view of adventuring. They hope their courage and legendary antics will be immortalized in written form or oral tradition."
+        "They believe that everyone is entitled to their own opinion."
     ];
 
     const evilIdeals = [
@@ -698,6 +872,7 @@ const randomLow = [
         "They can't resist messing with people who are more powerful than them.",
         "If there's a plan, they'll forget it. If they don't forget it, they'll ignore it.",
         "A scandal prevents them from ever going home again. That kind of trouble seems to follow them around.", 
+        "They possess a very Don Quixote-esque view of adventuring. They hope their courage and legendary antics will be immortalized in written form or oral tradition.",
         "They once satirized a noble who still wants their head. It was a mistake that they will likely repeat.",
         "Despite their best efforts, they are unreliable to their friends.",
         "The tyrant who rules their land will stop at nothing to see them killed.",
@@ -706,7 +881,32 @@ const randomLow = [
         "They narrate their own thoughts."
     ];
 
-
+    const characterGoals = [
+        "build a relationship.",
+        "undermine a relationship.",
+        "restore a relationship.",
+        "find a home",
+        "travel to a specific place.",
+        "remove a political leader.",
+        "rebel against power.",
+        "escape the law.",
+        "cure an illness.",
+        "destroy an ancestral enemy.",
+        "find a specific person.",
+        "resolve a dispute.",
+        "make an agreement.",
+        "remove a spiritual leader.",
+        "escape from a dangerous enemy.",
+        "resolve a dispute.",
+        "make an agreement.",
+        "pay a debt.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ]
 
     
 
@@ -757,7 +957,7 @@ function rollChar() {
             selectedLow = randomLow[randomLowIndex];
         }
 
-        //Bonds
+        //Bonds based on class
 
         if(selectedClass == "Fighter"){
             fighterBondsIndex = Math.floor(Math.random() * fighterBonds.length)
@@ -812,7 +1012,7 @@ function rollChar() {
             selectedBonds = artificerBonds[artificerBondsIndex];
         }
 
-        //Flaws
+        //Flaws based on alignment
 
         if(selectedAlignment == "Lawful Good" || selectedAlignment == "Lawful Neutral" || selectedAlignment == "Lawful Evil"){
             lawfulFlawsIndex = Math.floor(Math.random() * lawfulFlaws.length)
@@ -826,12 +1026,40 @@ function rollChar() {
             chaoticFlawsIndex = Math.floor(Math.random() * chaoticFlaws.length)
             selectedFlaws = chaoticFlaws[chaoticFlawsIndex];
         }
+
+        //Traits based on high stat
+
+        if(selectedHigh == "Strength"){
+            strTraitsIndex = Math.floor(Math.random() * strTraits.length)
+            selectedTraits = strTraits[strTraitsIndex];
+        }
+        else if(selectedHigh == "Dexterity"){
+            dexTraitsIndex = Math.floor(Math.random() * dexTraits.length)
+            selectedTraits = dexTraits[dexTraitsIndex];
+        }
+        else if(selectedHigh == "Constitution"){
+            conTraitsIndex = Math.floor(Math.random() * conTraits.length)
+            selectedTraits = conTraits[conTraitsIndex];
+        }
+        else if(selectedHigh == "Intelligence"){
+            intTraitsIndex = Math.floor(Math.random() * intTraits.length)
+            selectedTraits = intTraits[intTraitsIndex];
+        }
+        else if(selectedHigh == "Wisdom"){
+            wisTraitsIndex = Math.floor(Math.random() * wisTraits.length)
+            selectedTraits = wisTraits[wisTraitsIndex];
+        }
+        else if(selectedHigh == "Charisma"){
+            chaTraitsIndex = Math.floor(Math.random() * charTraits.length)
+            selectedTraits = chaTraits[chaTraitsIndex];
+        }
+        
         
         //Pop-up alert with results
 
         blurt({
             title: 'Your NPC:',
-            text: `${selectedAlignment} ${selectedRace} ${selectedClass} (${selectedPast}) whose highest statistic is ${selectedHigh} and lowest is ${selectedLow}. ${selectedBonds} ${selectedFlaws}`,
+            text: `${selectedAlignment} ${selectedRace} ${selectedClass} (${selectedPast}) whose highest statistic is ${selectedHigh} and lowest is ${selectedLow}. ${selectedBonds} ${selectedFlaws} ${selectedTraits}`,
             type: 'warning',
             okButtonText: 'Click anywhere to exit',
             escapable: true
