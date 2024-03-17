@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="blurt/blurt.min.css">
+    <script src="blurt/blurt.min.js"></script>
+    <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="roleplay-style.css">
+    <title>Roleplay Mode</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p id="smallWeaver">Fate Weaver</p>
+        <h1>Roleplay Mode</h1>
+        <p>
+            Looking for answers? Roll up
+            all the nuance and probabilities you need to reinforce
+            your scene with fate charts and roleplay options that
+            assist you in your storytelling!
+        </p>
+        <a id="domek" href="index.html">Home Page</a>
+        <br><br><br><br>
+    </div>
+
+    <div class="blank">
+        <h1>Fate</h1>
+        <p>
+            <i>"Tell me the future, oh wise one."</i><br>
+        </p>
+    </div>
+
+    <div class="container second">
+        <div class="card">
+            <div class="info">
+                <h3>Yes or No</h3>
+                <p>Classic, random fate roller. Pretty much like a coinflip.</p>
+            </div>
+            <button class="rollButton" onclick="rollPace();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Random Fate</h3>
+                <p>Random fate roller skewed to specific scenarios.</p>
+            </div>
+            <select id="fateSelect">
+                <option value="Almost Certain">Almost Certain</option>
+                <option value="Very Likely">Very Likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+                <option value="Very Unlikely">Very Unlikely</option>
+                <option value="Near Impossible">Near Impossible</option>
+            </select>
+            <button class="rollButton" onclick="rollAction();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Yes/No, but/and</h3>
+                <p>Expanded variation of the classic fate roller.</p>
+            </div>
+            <button class="rollButton" onclick="rollFailure();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container third">
+        <div class="card">
+            <div class="info">
+                <h3>Very Likely</h3>
+                <p>Random fate roller skewed to unlikely scenarios.</p>
+            </div>
+            <button class="rollButton" onclick="rollRandomEvent();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Very Unlikely</h3>
+                <p>Goal of your quest.</p>
+            </div>
+            <button class="rollButton" onclick="rollObjective();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Twist</h3>
+                <p>An added complication.</p>
+            </div>
+            <button class="rollButton" onclick="rollTwist();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container fourth">
+        <div class="card">
+            <div class="info">
+                <h3>Theme</h3>
+                <p>The motif of your quest. A special flair, if you will.</p>
+            </div>
+            <button class="rollButton" onclick="rollTheme();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Enemies</h3>
+                <p>Who will stand in your way (might clash with theme).</p>
+            </div>
+            <button class="rollButton" onclick="rollEnemies();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Allies</h3>
+                <p>Who will help you (optional if allies don't make sense in the quest).</p>
+            </div>
+            <button class="rollButton" onclick="rollAllies();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="blank">
+        <h1>Wilderness</h1>
+        <p>
+            <i>"The world is your oyster."</i><br>
+        </p>
+    </div>
+
+    <div class="container fifth">
+        <div class="card">
+            <div class="info">
+                <h3>Weather</h3>
+                <p>What the climate is like.</p>
+            </div>
+            <button class="rollButton" onclick="rollWeather();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Creatures</h3>
+                <p>What are the local creatures doing (can be humanoids too).</p>
+            </div>
+            <button class="rollButton" onclick="rollArea();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Weird Locales</h3>
+                <p>A supernatural twist to spice up a location.</p>
+            </div>
+            <button class="rollButton" onclick="rollWeird();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container sixth">
+        <div class="card">
+            <div class="info">
+                <h3>Encounter</h3>
+                <p>Roll for biome-themed encounters.</p>
+            </div>
+            <select id="biomes">
+                <option value="Forest">Forest</option>
+                <option value="Hill">Hill</option>
+                <option value="Mountain">Mountain</option>
+                <option value="Grassland">Grassland</option>
+                <option value="Swamp">Swamp</option>
+                <option value="Arctic">Arctic</option>
+                <option value="Jungle">Jungle</option>
+                <option value="Underwater">Underwater</option>
+                <option value="Underdark">Underdark</option>
+            </select>
+            <button class="rollButton" onclick="rollEncounter();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Storms</h3>
+                <p>Roll for extreme weather and its effects.</p>
+                <select id="weatherEffects">
+                    <option value="Thunder">Thunder</option>
+                    <option value="Hail">Hail</option>
+                    <option value="Wildfires">Wildfires</option>
+                    <option value="Wild Magic Storm">Wild Magic Storm</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="rollStorms();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Terrain</h3>
+                <p>Roll for exciting terrain quirks.</p>
+            </div>
+            <button class="rollButton" onclick="rollTerrain();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="blank">
+        <h1>Dungeons</h1>
+        <p>
+            <i>"You crawl before you run."</i><br>
+        </p>
+    </div>
+
+    <div class="container seventh">
+        <div class="card">
+            <div class="info">
+                <h3>Location</h3>
+                <p>Roll or choose where your dungeon is.</p>
+            </div>
+            <select id="dungeonLocation">
+                <option value="In a forest">In a forest</option>
+                <option value="In a building">In a building</option>
+                <option value="In a chasm">In a chasm</option>
+                <option value="In a cliff face">In a cliff face</option>
+                <option value="In a jungle">In a jungle</option>
+                <option value="In a gorge">In a gorge</option>
+                <option value="In a mountain pass">In a mountain pass</option>
+                <option value="In a swamp">In a swamp</option>
+                <option value="In a glacier">In a glacier</option>
+                <option value="In a desert">In a desert</option>
+                <option value="On a mountain peak">On a mountain peak</option>
+                <option value="On an island">On an island</option>
+                <option value="On a promontory">On a promontory</option>
+                <option value="Beneath a graveyard">Beneath a graveyard</option>
+                <option value="Beneath a castle">Beneath a castle</option>
+                <option value="Beneath a city">Beneath a city</option>
+                <option value="Beneath a temple">Beneath a temple</option>
+                <option value="Beneath ruins">Beneath ruins</option>
+                <option value="Catacombs">Catacombs</option>
+                <option value="Underwater">Underwater</option>
+                <option value="Exotic">Roll Exotic</option>
+            </select>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Exotic</h3>
+                <p>Roll or choose an EXOTIC location.</p>
+                <select id="exoticLocation">
+                    <option value="Among tree branches">Among tree branches</option>
+                    <option value="Around a geyser">Around a geyser</option>
+                    <option value="Behind a waterfall">Behind a waterfall</option>
+                    <option value="Buried in an avalanche">Buried in an avalanche</option>
+                    <option value="Buried in a sandstorm">Buried in a sandstorm</option>
+                    <option value="Sunken Structure">Sunken Structure</option>
+                    <option value="In a castle">In a castle</option>
+                    <option value="Floating on the sea">Floating on the sea</option>
+                    <option value="In a volcano">In a volcano</option>
+                    <option value="In a meteorite">In a meteorite</option>
+                    <option value="In the Feywild">In the Feywild</option>
+                    <option value="In the Shadowfell">In the Shadowfell</option>
+                    <option value="On the back of a gargantuan">On the back of a gargantuan creature</option>
+                    <option value="Inside a magical dome of force">Inside a magical dome of force</option>
+                    <option value="Inside a magnificent mansion">Inside a magnificent mansion</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Creator</h3>
+                <p>Roll who created your dungeon.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container eighth">
+        <div class="card">
+            <div class="info">
+                <h3>Inhabitants</h3>
+                <p>Roll for creatures, cults, and religious groups present in your dungeon.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Alignment</h3>
+                <p>Roll for alignment of your dungeon's residents</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Purpose</h3>
+                <p>Roll for the purpose of your dungeon.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container ninth">
+        <div class="card">
+            <div class="info">
+                <h3>History</h3>
+                <p>Roll for key events of your dungeon's history.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Obstacles</h3>
+                <p>Roll for something in the way.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Random Trap</h3>
+                <p>Roll for the room's trap(s) (trigger, severity, effect).</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container tenth">
+        <div class="card">
+            <div class="info">
+                <h3>Room Type</h3>
+                <p>Roll to quickly discern what's in a room.</p>
+            </div>
+            <button class="rollButton" onclick="rollRoomType();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Special Encounter</h3>
+                <p>Roll if you got this in "Room Type".</p>
+            </div>
+            <button class="rollButton" onclick="rollSencounter();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Random Treasure</h3>
+                <p>Roll for random valuables.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container eleventh">
+        <div class="card">
+            <div class="info">
+                <h3>Chamber Purpose</h3>
+                <p>Choose dungeon type and see.</p>
+                <select id="dungeonType">
+                    <option value="Generic">Generic</option>
+                    <option value="Maze">Maze</option>
+                    <option value="Tomb">Tomb</option>
+                    <option value="Lair">Lair</option>
+                    <option value="Mine">Mine</option>
+                    <option value="Stronghold">Stronghold</option>
+                    <option value="Treasure Vault">Treasure Vault</option>
+                    <option value="Temple or Shrine">Temple or Shrine</option>
+                    <option value="Death Trap">Death Trap</option>
+                    <option value="Planar Gate">Planar Gate</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Chamber Contents</h3>
+                <p>When "Room Type" is too vague.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Trick Objects</h3>
+                <p>Quirky random object with a quirky random trick effect.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="blank">
+        <h1>Flavour</h1>
+        <p>
+            <i>"All is bland when lacking in flavour."</i><br>
+        </p>
+    </div>
+
+    <div class="container twelve">
+        <div class="card">
+            <div class="info">
+                <h3>Dressing</h3>
+                <p>Choose Noise/Air/Odor and roll effect.</p>
+                <select id="dressingType">
+                    <option value="Noise">Noise</option>
+                    <option value="Air">Air</option>
+                    <option value="Odor">Odor</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>General Features</h3>
+                <p>Immersive features and items of a room/dungeon.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Furniture</h3>
+                <p>Roll for the room's general furnishing and appointments.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container thirteenth">
+        <div class="card">
+            <div class="info">
+                <h3>Specific Furnishing</h3>
+                <p>Choose furniture style and roll.</p>
+                <select id="furnitureType">
+                    <option value="Religious">Religious</option>
+                    <option value="Magic">Magic</option>
+                    <option value="Utensils">Utensils</option>
+                </select>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Container Contents</h3>
+                <p>Roll to see what's inside a random container.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Books and Scrolls</h3>
+                <p>Roll to see what's written in a random book/scroll/tome.</p>
+            </div>
+            <button class="rollButton" onclick="">ROLL</button>
+        </div>
+    </div>
+
+
+    <div class="blank-2">
+        <div class="footer">
+            <div class="column">
+                <h3>Credits</h3>
+                <ul>
+                    <li><a href="https://github.com/Michal-J-Kanios">Made by Michał Kanios</a></li>
+                    <li><a href="https://company.wizards.com/en">Not affiliated with WOTC</a></li>
+                    <li><a href="https://github.com/Michal-J-Kanios/fateweaver_oracle">Open source, non-profit</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="combat-mode.html">Combat Mode</a></li>
+                    <li><a href="roleplay-mode.html">Roleplay Mode</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="roleplay-script.js"></script>
+</body>
+</html>
