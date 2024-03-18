@@ -1375,6 +1375,74 @@
 
     //DUNGEON SECTION
     //===============
+    function rollDungeonLocation() {
+        const dunloc = [
+            "In a forest",
+            "In a building",
+            "In a chasm",
+            "In a cave",
+            "In a small section of the underdark",
+            "On a hill",
+            "In a village",
+            "In a town",
+            "In a city",
+            "In a cliff face",
+            "In a jungle",
+            "In a gorge",
+            "In a mountain pass",
+            "In a swamp",
+            "In a glacier",
+            "In a desert",
+            "On a mountain peak",
+            "On an island",
+            "On a promontory",
+            "Beneath a graveyard",
+            "Beneath a castle",
+            "Beneath a city",
+            "Beneath a temple",
+            "Beneath ruins",
+            "Catacombs",
+            "Underwater",
+            "Exotic"
+        ]
+        const dunlocIndex = Math.floor(Math.random() * dunloc.length)
+        blurt({
+            title: 'Location',
+            text: dunloc[dunlocIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollExoticLocation() {
+        const exoloc = [
+            "Among tree branches",
+            "Around a geyser",
+            "Behind a waterfall",
+            "Buried in an avalanche",
+            "Buried in a sandstorm",
+            "Sunken Structure",
+            "In a castle",
+            "Floating on the sea",
+            "In a volcano",
+            "In a meteorite",
+            "In the Feywild",
+            "In the Shadowfell",
+            "On the back of a gargantuan",
+            "Inside a magical dome of force",
+            "Inside a magnificent mansion"
+        ]
+        const exolocIndex = Math.floor(Math.random() * exoloc.length)
+        blurt({
+            title: 'Exotic Location',
+            text: exoloc[exolocIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
 
     function rollRoomType() {
         const RoomType = [
