@@ -1716,6 +1716,47 @@
         });
     }
 
+    function rollDungeonObstacles() {
+        const dunobst = [
+            "Antilife aura with a radius of 1d10 x 10 ft.; while in the aura, living creatures can't regain hit points",
+            "Battering winds reduce speed by half, impose disadvantage on ranged attack rolls",
+            "Blade barrier blocks passage",
+            "Cave-in",
+            "Cave-in",
+            "Cave-in",
+            "Cave-in",
+            "Cave-in",
+            "Chasm 1d4 x 10ft. wide and 2d6 x 10ft. deep, possibly connected to other levels of the dungeon",
+            "Chasm 1d4 x 10ft. wide and 2d6 x 10ft. deep, possibly connected to other levels of the dungeon",
+            "Chasm 1d4 x 10ft. wide and 2d6 x 10ft. deep, possibly connected to other levels of the dungeon",
+            "Chasm 1d4 x 10ft. wide and 2d6 x 10ft. deep, possibly connected to other levels of the dungeon",
+            "Flooding leaves 2d10 ft. of water in the area; create nearby upward-sloping passages, raised floors, or rising stairs to contain the water",
+            "Flooding leaves 2d10 ft. of water in the area; create nearby upward-sloping passages, raised floors, or rising stairs to contain the water",
+            "Lava flows through the area (50 percent chance of a stone bridge crossing through it)",
+            "Overgrown mushrooms block progress and must be hacked down (25 percent chance of a mold or fungus dungeon hazard hidden among them)",
+            "Poisonous gas (deals 1d6 poison damage per minute of exposure)",
+            "Reverse gravity effect causes creatures to fall toward the ceiling",
+            "Wall of fire blocks passage",
+            "Wall of force blocks passage",
+            "Wall of stone blocks passage",
+            "Lush razorvine hedge blocks passage",
+            "Massive boulder stands in the way",
+            "An earthquake leaves a trail of boulders that block passage",
+            "An earthquake splits the party if they fail a DC 16 DEX saving throw",
+            "A stubborn creature won't allow passage",
+            "The path is magically blocked unless a puzzle is solved",
+            "The path forward is blocked by a puzzle mechanism"
+            ]
+        const dunobstIndex = Math.floor(Math.random() * dunobst.length)
+        blurt({
+            title: 'Dungeon Obstacle',
+            text: dunobst[dunobstIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
 
     function rollRoomType() {
         const RoomType = [
