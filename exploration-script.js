@@ -1546,6 +1546,176 @@
         });
     }
 
+    function rollDungeonCreator() {
+        const duncreator = [
+            "Beholder",
+            "Devil-worshipping cult",
+            "Demon-worshipping cult",
+            "Elemental cult",
+            "Worshippers of a good deity",
+            "Worshippers of an evil deity",
+            "Dwarves",
+            "Elves",
+            "Giants",
+            "Goblinoids",
+            "Humans",
+            "Human NPC",
+            "Randomly-generated NPC",
+            "Mad Mage",
+            "Kuo-toa",
+            "Lich",
+            "Mind Flayers",
+            "Vampire",
+            "No creator (natural caverns)",
+            "Religious group",
+            "Organised Bandits",
+            "Archdruid",
+            "Powerful Wizard",
+            "Legendary Adventurer",
+            "Rich Noble",
+            "Paranoid wealth-hoarder",
+            "Dragon",
+            "Draconic cult",
+            "Genius Inventor"
+            ]
+        const duncreatorIndex = Math.floor(Math.random() * duncreator.length)
+        blurt({
+            title: 'Dungeon Creator',
+            text: duncreator[duncreatorIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollDungeonAlignment() {
+        const dunalign = [
+            "Lawful Good",
+            "Neutral Good",
+            "Chaotic Good",
+            "Lawful Neutral",
+            "Neutral",
+            "Chaotic Neutral",
+            "Lawful Evil",
+            "Neutral Evil",
+            "Chaotic Evil"
+            ]
+        const dunalignIndex = Math.floor(Math.random() * dunalign.length)
+        blurt({
+            title: 'Dungeon Alignment',
+            text: dunalign[dunalignIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollDunClass() {
+        const dunclass = [
+            "Barbarian",
+            "Bard",
+            "Cleric",
+            "Druid",
+            "Fighter",
+            "Monk",
+            "Paladin",
+            "Ranger",
+            "Rogue",
+            "Sorcerer",
+            "Warlock",
+            "Wizard",
+            "Artificer"
+            ]
+        const dunclassIndex = Math.floor(Math.random() * dunclass.length)
+        blurt({
+            title: 'Dungeon NPC Class',
+            text: dunclass[dunclassIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollDungeonPurpose() {
+        const dunpurpose = [
+            "Death Trap",
+            "Lair",
+            "Lair",
+            "Lair",
+            "Lair",
+            "Maze",
+            "Labyrinth",
+            "Mine",
+            "Mine",
+            "Mine",
+            "Planar Gate",
+            "Stronghold",
+            "Stronghold",
+            "Stronghold",
+            "Stronghold",
+            "Temple",
+            "Temple",
+            "Shrine",
+            "Shrine",
+            "Tomb",
+            "Tomb",
+            "Crypt",
+            "Catacombs",
+            "Treasure Vault",
+            "Fortress",
+            "Bunker"
+            ]
+        const dunpurposeIndex = Math.floor(Math.random() * dunpurpose.length)
+        blurt({
+            title: 'Dungeon Purpose',
+            text: dunpurpose[dunpurposeIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollDungeonHistory() {
+        const dunhistory = [
+            "Abandoned by creators",
+            "Abandoned by creators",
+            "Abandoned by creators",
+            "Abandoned due to plague",
+            "Conquered by invaders",
+            "Conquered by invaders",
+            "Conquered by invaders",
+            "Conquered by invaders",
+            "Creators destroyed by attacking raiders",
+            "Creators destroyed by attacking raiders",
+            "Creators destroyed by discovery made within the site",
+            "Creators destroyed by internal conflict",
+            "Creators destroyed by magical catastrophe",
+            "Creators destroyed by natural disaster",
+            "Original creator is shackled and serves the new master(s)",
+            "It was designed as a prison",
+            "It's a prison for its creator",
+            "Original creator still in control",
+            "Original creator still in control",
+            "Original creator still in control",
+            "Original creator still in control",
+            "Original creator still in control",
+            "Original creator still in control",
+            "Overrun by planar creatures",
+            "Site of a great miracle",
+            "Lush, overgrown ecosystem",
+            "Overgrown ruins",
+            "Filled to the brim with the undead because of a curse or disease"
+            ]
+        const dunhistoryIndex = Math.floor(Math.random() * dunhistory.length)
+        blurt({
+            title: 'Dungeon History',
+            text: dunhistory[dunhistoryIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
 
     function rollRoomType() {
         const RoomType = [
