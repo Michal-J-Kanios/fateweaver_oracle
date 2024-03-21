@@ -127,7 +127,7 @@ p {
     justify-content: center;
 }
 
-.second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .eleventh, .twelve, .thirteenth {
+.second, .third, .fourth, .fifth, .sixth, .seventh, .eighth, .ninth, .tenth, .tenth-half, .tenth-half2, .eleventh, .twelve, .thirteenth {
     background-image: url("explo-stripes.svg");
     background-attachment: fixed;
     height: 400px;

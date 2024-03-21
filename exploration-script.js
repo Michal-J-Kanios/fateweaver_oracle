@@ -1757,6 +1757,140 @@
         });
     }
 
+    function rollRandomTrap() {
+        const randomTrigger = [
+            "Stepped on (floor, stairs, plate)",
+            "Moved through (doorway, hallway, aura)",
+            "Touched (doorknob, statue, lever)",
+            "Looked at (mural, arcane symbol)",
+            "Moved (cart, stone block)",
+            "Opened (chest, coffin, sealed vase)",
+        ]
+        const randomSeverity = [
+            "Setback",
+            "Setback",
+            "Dangerous",
+            "Dangerous",
+            "Dangerous",
+            "Deadly"
+        ]
+        const randomEffects = [
+            "Magic missiles shoot from a statue or object",
+            "Magic missiles shoot from a statue or object",
+            "Magic missiles shoot from a statue or object",
+            "Magic missiles shoot from a statue or object",
+            "Collapsing staircase creates a ramp that deposits characters into a pit at its lower end",
+            "Collapsing staircase creates a ramp that deposits characters into a pit at its lower end",
+            "Chute opens in floor",
+            "Chute opens in floor (spikes/thorns/spears on the bottom)",
+            "Chute opens in floor (seemingly bottomless)",
+            "Chute opens in floor (another trap on the bottom)",
+            "Noise attracts monsters",
+            "Noise attracts monsters",
+            "Noise attracts monsters",
+            "Noise attracts monsters",
+            "Noise attracts monsters",
+            "Touch an object triggers a disintegrate spell",
+            "Door or other object is coated with contact poison",
+            "Fire shoots out from wall/floor/object",
+            "Fire shoots out from wall/floor/object",
+            "Fire shoots out from wall/floor/object",
+            "Fire shoots out from wall/floor/object",
+            "Vent releases blinding gas",
+            "Vent releases poisonous gas",
+            "Vent releases obscuring gas",
+            "Vent releases paralyzing gas",
+            "Vent releases sleep-inducing gas",
+            "Floor tiles are electrified",
+            "Floor tiles are electrified",
+            "Floor tiles are electrified",
+            "Glyph of Warding spell",
+            "Glyph of Warding spell",
+            "Glyph of Warding spell",
+            "Glyph of Warding spell",
+            "Floor collapses or is an illusion",
+            "Floor collapses or is an illusion",
+            "Floor collapses or is an illusion",
+            "Huge wheeled statue rolls down corridor",
+            "Huge wheeled statue rolls down corridor",
+            "Lightning bolt shoots from wall or object",
+            "Locked room floods with water",
+            "Locked room floods with acid",
+            "Darts shoot out of the wall/an opened chest/floor/ceiling",
+            "Darts shoot out of the wall/an opened chest/floor/ceiling",
+            "Darts shoot out of the wall/an opened chest/floor/ceiling",
+            "Darts shoot out of the wall/an opened chest/floor/ceiling",
+            "A weapon, suit of armor, or other object animates and attacks when touched (google ''Animated Objects'' or look up the rules in the Monster Manual)",
+            "A weapon, suit of armor, or other object animates and attacks when touched (google ''Animated Objects'' or look up the rules in the Monster Manual)",
+            "A weapon, suit of armor, or other object animates and attacks when touched (google ''Animated Objects'' or look up the rules in the Monster Manual)",
+            "A weapon, suit of armor, or other object animates and attacks when touched (google ''Animated Objects'' or look up the rules in the Monster Manual)",
+            "Pendulum, either bladed or weighted as a maul, swings across the room or hall",
+            "Pendulum, either bladed or weighted as a maul, swings across the room or hall",
+            "Pendulum, either bladed or weighted as a maul, swings across the room or hall",
+            "Pendulum, either bladed or weighted as a maul, swings across the room or hall",
+            "Hidden pit opens beneath characters",
+            "Hidden pit opens beneath characters",
+            "Hidden pit opens beneath characters",
+            "Hidden pit opens beneath characters. A gelatinous cube fills the bottom of the pit",
+            "Hidden pit opens beneath characters. A black pudding fills the bottom of the pit",
+            "Hidden pit floods with acid",
+            "Hidden pit floods with fire",
+            "Symbol spell",
+            "Symbol spell",
+            "Symbol spell",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever. Also alerts nearby monsters",
+            "Thunderwave knocks characters into a pit, spikes, down the stairs, or whatever. Also alerts all dungeon monsters",
+            "Locking pit floods with water",
+            "Locking pit floods with water",
+            "Locking pit floods with water",
+            "Scything blade emerges from wall or object",
+            "Scything blade emerges from wall or object",
+            "Scything blade emerges from wall or object",
+            "Scything blade emerges from wall or object",
+            "Spears spring out",
+            "Spears spring out",
+            "Spears spring out",
+            "Poisoned spears spring out",
+            "Metal spikes spring out",
+            "Tall spikes spring out",
+            "Wooden stakes spring out, splintering into spike clusters",
+            "Arrows fire from slits in the walls",
+            "Arrows fire from slits in the walls",
+            "Arrows fire from slits in the walls",
+            "Flaming arrows fire from slits in the walls",
+            "Poison-tipped arrows fire from slits in the walls",
+            "Brittle stairs collapse over spikes",
+            "Steel or stone jaws restrain a character",
+            "Steel or stone jaws restrain a character",
+            "Steel or stone jaws restrain a character",
+            "A character and everyone within 5ft of them is caught inside a net (max 4 medium-sized characters)",
+            "A character and everyone within 5ft of them is caught inside a net (max 4 medium-sized characters)",
+            "A character and everyone within 5ft of them is caught inside a large, flexible metal net",
+            "A character is caught inside an anti-magical net",
+            "Walls slide together",
+            "Walls slide together",
+            "Walls slide together",
+            "Ceiling lowers slowly in locked room",
+            "Ceiling lowers slowly in locked room",
+            "Floor rises slowly in locked room",
+            "Floor rises slowly in locked room",
+        ]
+        const randomTriggerIndex = Math.floor(Math.random() * randomTrigger.length)
+        const randomSeverityIndex = Math.floor(Math.random() * randomSeverity.length)
+        const randomEffectsIndex = Math.floor(Math.random() * randomEffects.length)
+        blurt({
+            title: 'Random Trap',
+            text: `Trap trigger: ${randomTrigger[randomTriggerIndex]}. Trap severity: ${randomSeverity[randomSeverityIndex]}. Trap effect: ${randomEffects[randomEffectsIndex]}.`,
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
 
     function rollRoomType() {
         const RoomType = [
@@ -1845,5 +1979,189 @@
             okButtonText: 'Click anywhere to exit',
             escapable: true
         });
+    }
+
+    function rollMagLoot() {
+        selectedTier = document.getElementById("magLootTier").value;
+        if(selectedTier == "Common Tier (A)"){
+            const commonLoot = [
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Potion of healing",
+                "Spell scroll (cantrip)",
+                "Spell scroll (cantrip)",
+                "Spell scroll (cantrip)",
+                "Potion of climbing",
+                "Potion of climbing",
+                "Potion of climbing",
+                "Spell scroll (1st level)",
+                "Spell scroll (1st level)",
+                "Spell scroll (1st level)",
+                "Spell scroll (1st level)",
+                "Potion of greater healing",
+                "Potion of greater healing",
+                "Bag of holding",
+                "Driftglobe"
+            ]
+            const commonLootIndex = Math.floor(Math.random() * commonLoot.length)
+            blurt({
+                title: 'Magical Treasure',
+                text: commonLoot[commonLootIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedTier == "Uncommon Tier (B)"){
+            const uncommonLoot = [
+                "Potion of greater healing",
+                "Potion of greater healing",
+                "Potion of greater healing",
+                "Potion of fire breath",
+                "Potion of fire breath",
+                "Potion of fire breath",
+                "Potion of fire resistance",
+                "Potion of fire resistance",
+                "Weapon, +1",
+                "Weapon, +1",
+                "Ammunition, +1",
+                "Potion of animal friendship",
+                "Potion of hill giant's strength",
+                "Potion of growth",
+                "Potion of water breathing",
+                "Spell scroll (2nd level)",
+                "Spell scroll (3rd level)",
+                "Bag of holding",
+                "Keoghtom's ointment",
+                "Oil of slipperines",
+                "Dust of disappearance",
+                "Dust of dryness",
+                "Dust of sneezing and choking",
+                "Elemental gem",
+                "Philter of love",
+                "Alchemy jug",
+                "Cap of water breathing",
+                "Cloak of the manta ray",
+                "Goggles of the night",
+                "Helm of comprehending languages",
+                "Immovable rod",
+                "Lantern of revealing",
+                "Mariner's armor",
+                "Mithral armor",
+                "Potion of poison",
+                "Ring of swimming",
+                "Robe of useful items",
+                "Rope of climbing",
+                "Saddle of the cavalier",
+                "Wand of magic detection",
+                "Wand of secrets",
+                "Driftglobe"
+            ]
+            const uncommonLootIndex = Math.floor(Math.random() * uncommonLoot.length)
+            blurt({
+                title: 'Magical Treasure',
+                text: uncommonLoot[uncommonLootIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedTier == "Rare Tier (C)"){
+            const rareLoot = [
+                "Potion of superior healing",
+                "Potion of superior healing",
+                "Potion of superior healing",
+                "Ammunition, +2",
+                "Potion of clairvoyance",
+                "Potion of diminution",
+                "Potion of diminution",
+                "Potion of gaseous form",
+                "Potion of frost giant strength",
+                "Potion of stone giant strength",
+                "Potion of heroism",
+                "Potion of heroism",
+                "Potion of invulnerability",
+                "Potion of mind reading",
+                "Spell scroll (5th level)",
+                "Elixir of health",
+                "Elixir of health",
+                "Oil of etherealness",
+                "Oil of etherealness",
+                "Potion of fire giant strength",
+                "Quaal's feather token",
+                "Scroll of protection",
+                "Bag of beans",
+                "Chime of opening",
+                "Decanter of endless water",
+                "Eyes of minute seeing",
+                "Folding boat",
+                "Heward's handy haversack",
+                "Horseshoes of speed",
+                "Necklace of fireballs",
+                "Periapt of health",
+                "Sending stones"
+            ]
+            const rareLootIndex = Math.floor(Math.random() * rareLoot.length)
+            blurt({
+                title: 'Magical Treasure',
+                text: rareLoot[rareLootIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedTier == "Very Rare Tier (D)"){
+            const rareLoot = [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+            const veryRareLootIndex = Math.floor(Math.random() * veryRareLoot.length)
+            blurt({
+                title: 'Magical Treasure',
+                text: veryRareLoot[veryRareLootIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No btier selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
     }
     

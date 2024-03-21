@@ -293,7 +293,7 @@
                 <h3>Random Trap</h3>
                 <p>Roll for the room's trap(s) (trigger, severity, effect).</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollRandomTrap();">ROLL</button>
         </div>
     </div>
 
@@ -317,7 +317,42 @@
                 <h3>Random Treasure</h3>
                 <p>Roll for random valuables.</p>
             </div>
-            <button class="rollButton" onclick="">ROLL</button>
+            <button class="rollButton" onclick="rollTreasure();">ROLL</button>
+        </div>
+    </div>
+
+    <div class="container tenth-half">
+        <div class="card">
+            <div class="info">
+                <h3>Gemstones</h3>
+                <p>Roll for gemstone treasure and its value.</p>
+            </div>
+            <button class="rollButton" onclick="rollGemstones();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Art Objects</h3>
+                <p>Roll for art objects and their value.</p>
+            </div>
+            <button class="rollButton" onclick="rollArtObjects();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Magic Loot</h3>
+                <p>Roll for magical treasure.</p>
+            </div>
+            <select id="magLootTier">
+                <option value="Common Tier (A)">Common Tier (A)</option>
+                <option value="Uncommon Tier (B)">Uncommon Tier (B)</option>
+                <option value="Rare Tier (C)">Rare Tier (C)</option>
+                <option value="Very Rare Tier (D)">Very Rare Tier (D)</option>
+                <option value="Epic Tier (E)">Epic Tier (E)</option>
+                <option value="Mythical Tier (F)">Mythical Tier (F)</option>
+                <option value="Legend Tier (G)">Legend Tier (G)</option>
+                <option value="Heroic Tier (H)">Heroic Tier (H)</option>
+                <option value="Iconic Tier (I)">Iconic Tier (I)</option>
+            </select>
+            <button class="rollButton" onclick="rollMagLoot();">ROLL</button>
         </div>
     </div>
 
