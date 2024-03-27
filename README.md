@@ -1,7 +1,7 @@
 # FATE WEAVER 🎲
 ## The Ultimate GM Emulator/Solo Play Oracle for Dungeons & Dragons 5th Edition 🧙‍♂️
 Roll on compact roll tables and string the results together using your imagination to quickly create an engaging world that is ready for adventure!
-### Project is open source. Feel free to reflavour it to other TTRPG systems, as long as you give proper credit :)
+### Project is open source. Feel free to reflavour it to other TTRPG systems, as long as you give proper credit :D
 ![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/assets/92123240/e1273696-638b-4f68-b0be-767e792268e6)
 
 ## Your adventure went off the rails and you can't find...
