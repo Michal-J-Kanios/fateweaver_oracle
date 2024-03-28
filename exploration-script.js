@@ -1981,6 +1981,110 @@
         });
     }
 
+
+    function rollTreasure() {
+        selectedTier = document.getElementById("treasureTier").value;
+        if(selectedTier == "Challenge 0-4"){
+            const tieredLoot = [
+                "5d6 copper pieces",
+                "6d6 copper pieces",
+                "7d6 copper pieces",
+                "4d6 silver pieces",
+                "5d6 silver pieces",
+                "6d6 silver pieces",
+                "3d6 electrum pieces",
+                "4d6 electrum pieces",
+                "5d6 electrum pieces",
+                "3d6 gold pieces",
+                "4d6 gold pieces",
+                "1d6 platinum pieces",
+                "Roll once on Common Tier - (A) Magic Loot table"
+            ]
+            const tieredLootIndex = Math.floor(Math.random() * tieredLoot.length)
+            blurt({
+                title: 'Valuables',
+                text: tieredLoot[tieredLootIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "Challenge 5-10"){
+            const tieredLoot2 = [
+                "4d6 x 100 copper pieces",
+                "6d6 x 50 silver pieces",
+                "1d6 x 10 electrum pieces + 1400 copper pieces",
+                "6d6 x 10 silver pieces + 2d6 x 10 gold pieces",
+                "2d4 x 100 gold pieces",
+                "2d6 x 50 gold pieces",
+                "3d6 x 10 electrum pieces + 2d6 x 10 gold pieces",
+                "Roll 1d4 times on Common Tier - (A) Magic Loot table",
+                "Roll 1d4 times on Uncommon Tier - (B) Magic Loot table",
+                "Roll once on Uncommon Tier - (B) Magic Loot table",
+                "Roll once on Rare Tier - (C) Magic Loot table"
+            ]
+            const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
+            blurt({
+                title: 'Valuables',
+                text: tieredLoot2[tieredLoot2Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "Challenge 11-16"){
+            const tieredLoot3 = [
+                "4d6 x 100 silver pieces + 1d6 x 100 gold pieces",
+                "3d6 x 100 gold pieces",
+                "6d6 x 100 silver pieces",
+                "1d6 x 100 electrum pieces + 1d6 x 100 gold pieces",
+                "1d6 x 10 platinum pieces + 2d6 x 100 gold pieces",
+                "2d6 x 10 platinum pieces + 2d6 x 100 gold pieces",
+                "1d4 x 20 platinum pieces + 2d6 x 100 gold pieces",
+                "Roll 1d6 times on Common Tier - (A) Magic Loot table",
+                "Roll 1d6 times on Uncommon Tier - (B) Magic Loot table",
+                "Roll 1d4 times on Rare Tier - (C) Magic Loot table",
+                "Roll once on Very Rare Tier - (D) Magic Loot table",
+                "Roll once on Epic Tier - (E) Magic Loot table",
+                "Roll once on Mythical Tier - (F) Magic Loot table",
+            ]
+            const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
+            blurt({
+                title: 'Valuables',
+                text: tieredLoot3[tieredLoot3Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "Challenge 17+"){
+            const tieredLoot4 = [
+                "2d6 x 100 electrum pieces + 8d6 x 100 gold pieces",
+                "1d6 x 1000 gold pieces + 1d6 x 100 platinum pieces",
+                "1d6 x 1000 gold pieces + 2d6 x 100 platinum pieces",
+                "2d6 x 1000 gold pieces + 2d6 x 100 platinum pieces",
+                "2d6 x 1000 gold pieces + 3d6 x 100 platinum pieces",
+                "3d6 x 1000 gold pieces + 2d6 x 100 platinum pieces",
+                "3d6 x 1000 gold pieces + 3d6 x 100 platinum pieces",
+                "Roll 1d6 times on Very Rare Tier - (D) Magic Loot table",
+                "Roll 1d4 times on Epic Tier - (E) Magic Loot table",
+                "Roll 1d4 times on Mythical Tier - (F) Magic Loot table",
+                "Roll once on Legend Tier - (G) Magic Loot table",
+                "Roll once on Heroic Tier - (H) Magic Loot table",
+                "Roll once on Iconic Tier - (I) Magic Loot table",
+            ]
+            const tieredLoot4Index = Math.floor(Math.random() * tieredLoot4.length)
+            blurt({
+                title: 'Valuables',
+                text: tieredLoot4[tieredLoot4Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+    }
+    
+
     function rollMagLoot() {
         selectedTier = document.getElementById("magLootTier").value;
         if(selectedTier == "Common Tier (A)"){
