@@ -2082,6 +2082,285 @@
                 escapable: true
             });
         }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No challenge selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
+    }
+
+    function rollGemstones() {
+        selectedTier = document.getElementById("gemstonesTier").value;
+        if(selectedTier == "10 GP Gemstones"){
+            const tieredLoot1 = [
+                "Azurite (opaque mottled deep blue)",
+                "Banded agate (translucent striped brown, blue, white, or red)",
+                "Blue quartz (transparent pale blue)",
+                "Eye agate (translucent circles of gray, white, brown, blue, or green)",
+                "Hematite (opaque gray-black)",
+                "Lapis lazuli (opaque light and dark blue with yellow flecks)",
+                "Malachite (opaque striated light and dark green)",
+                "Moss agate (translucent pink or yellow-white with mossy gray or green markings",
+                "Obsidian (opaque black)",
+                "Rhodochrosite (opaque light pink)",
+                "Tiger eye (translucent brown with golden center)",
+                "Turquoise (opaque light blue-green)"
+            ]
+            const tieredLoot1Index = Math.floor(Math.random() * tieredLoot1.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot1[tieredLoot1Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "50 GP Gemstones"){
+            const tieredLoot2 = [
+                "Bloodstone (opaque dark gray with red flecks)",
+                "Carnelian (opaque orange to red-brown)",
+                "Chalcedony (opaque white)",
+                "Chrysoprase (translucent green)",
+                "Citrine (transparent pale yellow-brown)",
+                "Jasper (opaque blue, black, or brown)",
+                "Moonstone (translucent white with pale blue glow)",
+                "Onyx (opaque bands of black and white, or pure black or white)",
+                "Quartz (transparent white, smoky gray, or yellow)",
+                "Sardonyx (opaque bands of red and white)",
+                "Star rose quartz (translucent rosy stone with white star-shaped center)",
+                "Zircon (transparent pale blue-green)"
+            ]
+            const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot2[tieredLoot2Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "100 GP Gemstones"){
+            const tieredLoot3 = [
+                "Amber (transparent watery gold to rich gold)",
+                "Amethyst (transparent deep purple)",
+                "Chrysoberyl (transparent yellow-green to pale green)",
+                "Coral (opaque crimson)",
+                "Garnet (transparent red, brown-green, or violet)",
+                "Jade (translucent light green, deep green, or white)",
+                "Jet (opaque deep black)",
+                "Pearl (opaque lustrous white, yellow, or pink)",
+                "Spinel (transparent red, red-brown, or deep green",
+                "Tourmaline (transparent pale green, blue, brown, or red)"
+            ]
+            const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot3[tieredLoot3Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "500 GP Gemstones"){
+            const tieredLoot4 = [
+                "Alexandrite (transparent dark green)",
+                "Aquamarine (transparent pale blue-green)",
+                "Black pearl (opaque pure black)",
+                "Blue spinel (transparent deep blue)",
+                "Peridot (transparent rich olive green)",
+                "Topaz (transparent golden yellow)"
+            ]
+            const tieredLoot4Index = Math.floor(Math.random() * tieredLoot4.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot4[tieredLoot4Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "1000 GP Gemstones"){
+            const tieredLoot5 = [
+                "Black opal (translucent dark green with black mottling and golden flecks)",
+                "Blue sapphire transparent blue-white to medium blue)",
+                "Emerald (transparent deep bright green)",
+                "Fire opal (translucent fiery red)",
+                "Opal (translucent pale blue with green and golden mottling)",
+                "Star ruby (translucent ruby with white star-shaped center)",
+                "Star sapphire (translucent blue sapphire with white star-shaped center)",
+                "Yellow sapphire (transparent fiery yellow or yellow-green)"
+            ]
+            const tieredLoot5Index = Math.floor(Math.random() * tieredLoot5.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot5[tieredLoot5Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "5000 GP Gemstones"){
+            const tieredLoot6 = [
+                "Black sapphire (translucent lustrous black with glowing highlights)",
+                "Diamond (transparent blue-white, canary, pink, brown, or blue)",
+                "Jacinth (transparent fiery orange)",
+                "Ruby (transparent clear red to deep crimson)"
+            ]
+            const tieredLoot6Index = Math.floor(Math.random() * tieredLoot6.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot6[tieredLoot6Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No value selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
+    }
+
+    function rollArtObjects() {
+        selectedTier = document.getElementById("artObjectsTier").value;
+        if(selectedTier == "25 GP Art Objects"){
+            const tieredLoot1 = [
+                "Silver ewer",
+                "Carved bone statuette",
+                "Small gold bracelet",
+                "Cloth-of-gold vestments",
+                "Black velvet mask stitched with silver thread",
+                "Copper chalice with silver filigree",
+                "Pair of egraved bone dice",
+                "Small mirror set in a painted wooden frame",
+                "Embroidered silk handkerchief",
+                "Gold locket with a painted portrait inside"
+            ]
+            const tieredLoot1Index = Math.floor(Math.random() * tieredLoot1.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot1[tieredLoot1Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "250 GP Art Objects"){
+            const tieredLoot2 = [
+                "Gold ring set with bloodstones",
+                "Carved ivory statuette",
+                "Large gold bracelet",
+                "Silver necklace with a gemstone pendant",
+                "Bronze crown",
+                "Silk robe with gold embroidery",
+                "Large well-made tapestry",
+                "Brass mug with jade inlay",
+                "Box of turquoise animal figurines",
+                "Gold bird cage with electrum filigree"
+            ]
+            const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot2[tieredLoot2Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "100 GP Gemstones"){
+            const tieredLoot3 = [
+                "Amber (transparent watery gold to rich gold)",
+                "Amethyst (transparent deep purple)",
+                "Chrysoberyl (transparent yellow-green to pale green)",
+                "Coral (opaque crimson)",
+                "Garnet (transparent red, brown-green, or violet)",
+                "Jade (translucent light green, deep green, or white)",
+                "Jet (opaque deep black)",
+                "Pearl (opaque lustrous white, yellow, or pink)",
+                "Spinel (transparent red, red-brown, or deep green",
+                "Tourmaline (transparent pale green, blue, brown, or red)"
+            ]
+            const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot3[tieredLoot3Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "500 GP Gemstones"){
+            const tieredLoot4 = [
+                "Alexandrite (transparent dark green)",
+                "Aquamarine (transparent pale blue-green)",
+                "Black pearl (opaque pure black)",
+                "Blue spinel (transparent deep blue)",
+                "Peridot (transparent rich olive green)",
+                "Topaz (transparent golden yellow)"
+            ]
+            const tieredLoot4Index = Math.floor(Math.random() * tieredLoot4.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot4[tieredLoot4Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "1000 GP Gemstones"){
+            const tieredLoot5 = [
+                "Black opal (translucent dark green with black mottling and golden flecks)",
+                "Blue sapphire transparent blue-white to medium blue)",
+                "Emerald (transparent deep bright green)",
+                "Fire opal (translucent fiery red)",
+                "Opal (translucent pale blue with green and golden mottling)",
+                "Star ruby (translucent ruby with white star-shaped center)",
+                "Star sapphire (translucent blue sapphire with white star-shaped center)",
+                "Yellow sapphire (transparent fiery yellow or yellow-green)"
+            ]
+            const tieredLoot5Index = Math.floor(Math.random() * tieredLoot5.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot5[tieredLoot5Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "5000 GP Gemstones"){
+            const tieredLoot6 = [
+                "Black sapphire (translucent lustrous black with glowing highlights)",
+                "Diamond (transparent blue-white, canary, pink, brown, or blue)",
+                "Jacinth (transparent fiery orange)",
+                "Ruby (transparent clear red to deep crimson)"
+            ]
+            const tieredLoot6Index = Math.floor(Math.random() * tieredLoot6.length)
+            blurt({
+                title: 'Gemstones',
+                text: tieredLoot6[tieredLoot6Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No value selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
     }
     
 
@@ -2692,7 +2971,7 @@
         else{
             blurt({
                 title: 'Error',
-                text: "No btier selected.",
+                text: "No tier selected.",
                 type: 'error',
                 okButtonText: 'Uh oh',
                 escapable: true

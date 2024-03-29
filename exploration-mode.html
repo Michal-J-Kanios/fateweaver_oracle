@@ -331,15 +331,30 @@
         <div class="card">
             <div class="info">
                 <h3>Gemstones</h3>
-                <p>Roll for gemstone treasure and its value.</p>
+                <p>Roll for gemstone treasure.</p>
             </div>
+            <select id="gemstonesTier">
+                <option value="10 GP Gemstones">10 GP Gemstones</option>
+                <option value="50 GP Gemstones">50 GP Gemstones</option>
+                <option value="100 GP Gemstones">100 GP Gemstones</option>
+                <option value="500 GP Gemstones">500 GP Gemstones</option>
+                <option value="1000 GP Gemstones">1000 GP Gemstones</option>
+                <option value="5000 GP Gemstones">5000 GP Gemstones</option>
+            </select>
             <button class="rollButton" onclick="rollGemstones();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
                 <h3>Art Objects</h3>
-                <p>Roll for art objects and their value.</p>
+                <p>Roll for treasure trinkets.</p>
             </div>
+            <select id="artObjectsTier">
+                <option value="25 GP Art Objects">25 GP Art Objects</option>
+                <option value="250 GP Art Objects">250 GP Art Objects</option>
+                <option value="750 GP Art Objects">750 GP Art Objects</option>
+                <option value="2500 GP Art Objects">2500 GP Art Objects</option>
+                <option value="7500 GP Art Objects">7500 GP Art Objects</option>
+            </select>
             <button class="rollButton" onclick="rollArtObjects();">ROLL</button>
         </div>
         <div class="card">
