@@ -2276,77 +2276,65 @@
                 escapable: true
             });
         }
-        else if (selectedTier == "100 GP Gemstones"){
+        else if (selectedTier == "750 GP Art Objects"){
             const tieredLoot3 = [
-                "Amber (transparent watery gold to rich gold)",
-                "Amethyst (transparent deep purple)",
-                "Chrysoberyl (transparent yellow-green to pale green)",
-                "Coral (opaque crimson)",
-                "Garnet (transparent red, brown-green, or violet)",
-                "Jade (translucent light green, deep green, or white)",
-                "Jet (opaque deep black)",
-                "Pearl (opaque lustrous white, yellow, or pink)",
-                "Spinel (transparent red, red-brown, or deep green",
-                "Tourmaline (transparent pale green, blue, brown, or red)"
+                "Silver chaice set with moonstones",
+                "Silver-plated steel longsword with jet set in hilt",
+                "Carved harp of exotic wood with ivory inlay and zircon gems",
+                "Small gold idol",
+                "Box of expensive, hand-painted wargaming miniatures",
+                "Bottle stopper cork embossed with a gold leaf and set with amethysts",
+                "Ceremonial electrum dagger with a black pearl in the pommel",
+                "Silver and gold brooch",
+                "Obsidian statuette with gold fittings and inlay",
+                "Painted gold war mask"
             ]
             const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
             blurt({
-                title: 'Gemstones',
+                title: 'Art Objects',
                 text: tieredLoot3[tieredLoot3Index],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
         }
-        else if (selectedTier == "500 GP Gemstones"){
+        else if (selectedTier == "2500 GP Art Objects"){
             const tieredLoot4 = [
-                "Alexandrite (transparent dark green)",
-                "Aquamarine (transparent pale blue-green)",
-                "Black pearl (opaque pure black)",
-                "Blue spinel (transparent deep blue)",
-                "Peridot (transparent rich olive green)",
-                "Topaz (transparent golden yellow)"
+                "Fine gold chain set with a fire opal",
+                "Old masterpiece painting",
+                "Embroidered silk and velvet mantle set with numerous moonstones",
+                "Platinum bracelet set with a sapphire",
+                "Embroidered glove set with jewel chips",
+                "Jeweled anklet",
+                "Gold music box",
+                "Gold circlet set with four aquamarines",
+                "Eye patch with a mock eye set in blue sapphire and moonstone",
+                "A necklace string of small pink pearls"
             ]
             const tieredLoot4Index = Math.floor(Math.random() * tieredLoot4.length)
             blurt({
-                title: 'Gemstones',
+                title: 'Art Objects',
                 text: tieredLoot4[tieredLoot4Index],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
         }
-        else if (selectedTier == "1000 GP Gemstones"){
+        else if (selectedTier == "7500 GP Art Objects"){
             const tieredLoot5 = [
-                "Black opal (translucent dark green with black mottling and golden flecks)",
-                "Blue sapphire transparent blue-white to medium blue)",
-                "Emerald (transparent deep bright green)",
-                "Fire opal (translucent fiery red)",
-                "Opal (translucent pale blue with green and golden mottling)",
-                "Star ruby (translucent ruby with white star-shaped center)",
-                "Star sapphire (translucent blue sapphire with white star-shaped center)",
-                "Yellow sapphire (transparent fiery yellow or yellow-green)"
+                "Jeweled gold crown",
+                "Jeweled platinum ring",
+                "Small gold statuette set with rubies",
+                "Gold cup set with emeralds",
+                "Gold jewelry box with platinum filigree",
+                "Painted gold child's sacrophagus",
+                "Jade game board with solid gold playing pieces",
+                "Bejeweled ivory drinking horn with gold filigree"
             ]
             const tieredLoot5Index = Math.floor(Math.random() * tieredLoot5.length)
             blurt({
-                title: 'Gemstones',
+                title: 'Art Objects',
                 text: tieredLoot5[tieredLoot5Index],
-                type: 'info',
-                okButtonText: 'Click anywhere to exit',
-                escapable: true
-            });
-        }
-        else if (selectedTier == "5000 GP Gemstones"){
-            const tieredLoot6 = [
-                "Black sapphire (translucent lustrous black with glowing highlights)",
-                "Diamond (transparent blue-white, canary, pink, brown, or blue)",
-                "Jacinth (transparent fiery orange)",
-                "Ruby (transparent clear red to deep crimson)"
-            ]
-            const tieredLoot6Index = Math.floor(Math.random() * tieredLoot6.length)
-            blurt({
-                title: 'Gemstones',
-                text: tieredLoot6[tieredLoot6Index],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
