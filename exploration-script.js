@@ -2350,7 +2350,344 @@
             });
         }
     }
-    
+
+    function chamberPurpose(){
+        selectedType = document.getElementById("dungeonType").value;
+        if(selectedType == "Generic"){
+            const chamber = [
+                "Antechamber",
+                "Armory",
+                "Armory",
+                "Audience chamber",
+                "Aviary",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Maze"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Tomb"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Lair"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Mine"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Stronghold"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Treasure Vault"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Temple or Shrine"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Death Trap"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedType == "Planar Gate"){
+            const chamber = [
+                "",
+                ""
+            ]
+            const chamberIndex = Math.floor(Math.random() * chamber.length)
+            blurt({
+                title: 'Chamber Purpose',
+                text: chamber[chamberIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No dungeon selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
+    }
+
+    function rollArtObjects() {
+        selectedTier = document.getElementById("artObjectsTier").value;
+        if(selectedTier == "25 GP Art Objects"){
+            const tieredLoot1 = [
+                "Silver ewer",
+                "Carved bone statuette",
+                "Small gold bracelet",
+                "Cloth-of-gold vestments",
+                "Black velvet mask stitched with silver thread",
+                "Copper chalice with silver filigree",
+                "Pair of egraved bone dice",
+                "Small mirror set in a painted wooden frame",
+                "Embroidered silk handkerchief",
+                "Gold locket with a painted portrait inside"
+            ]
+            const tieredLoot1Index = Math.floor(Math.random() * tieredLoot1.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot1[tieredLoot1Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "250 GP Art Objects"){
+            const tieredLoot2 = [
+                "Gold ring set with bloodstones",
+                "Carved ivory statuette",
+                "Large gold bracelet",
+                "Silver necklace with a gemstone pendant",
+                "Bronze crown",
+                "Silk robe with gold embroidery",
+                "Large well-made tapestry",
+                "Brass mug with jade inlay",
+                "Box of turquoise animal figurines",
+                "Gold bird cage with electrum filigree"
+            ]
+            const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot2[tieredLoot2Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "750 GP Art Objects"){
+            const tieredLoot3 = [
+                "Silver chaice set with moonstones",
+                "Silver-plated steel longsword with jet set in hilt",
+                "Carved harp of exotic wood with ivory inlay and zircon gems",
+                "Small gold idol",
+                "Box of expensive, hand-painted wargaming miniatures",
+                "Bottle stopper cork embossed with a gold leaf and set with amethysts",
+                "Ceremonial electrum dagger with a black pearl in the pommel",
+                "Silver and gold brooch",
+                "Obsidian statuette with gold fittings and inlay",
+                "Painted gold war mask"
+            ]
+            const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot3[tieredLoot3Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "2500 GP Art Objects"){
+            const tieredLoot4 = [
+                "Fine gold chain set with a fire opal",
+                "Old masterpiece painting",
+                "Embroidered silk and velvet mantle set with numerous moonstones",
+                "Platinum bracelet set with a sapphire",
+                "Embroidered glove set with jewel chips",
+                "Jeweled anklet",
+                "Gold music box",
+                "Gold circlet set with four aquamarines",
+                "Eye patch with a mock eye set in blue sapphire and moonstone",
+                "A necklace string of small pink pearls"
+            ]
+            const tieredLoot4Index = Math.floor(Math.random() * tieredLoot4.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot4[tieredLoot4Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "7500 GP Art Objects"){
+            const tieredLoot5 = [
+                "Jeweled gold crown",
+                "Jeweled platinum ring",
+                "Small gold statuette set with rubies",
+                "Gold cup set with emeralds",
+                "Gold jewelry box with platinum filigree",
+                "Painted gold child's sacrophagus",
+                "Jade game board with solid gold playing pieces",
+                "Bejeweled ivory drinking horn with gold filigree"
+            ]
+            const tieredLoot5Index = Math.floor(Math.random() * tieredLoot5.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot5[tieredLoot5Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No value selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
+
+
+    }
 
     function rollMagLoot() {
         selectedTier = document.getElementById("magLootTier").value;
