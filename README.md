@@ -34,5 +34,5 @@ With **Fate Weaver**, the oracle alleviates such problems by:
 - Exploration Mode
 - Roleplay Mode
 - Combat Mode
-- Integrated NPC Generator
-- Integrated Settlement Designer
+- NPC Generator
+- Settlement Designer
