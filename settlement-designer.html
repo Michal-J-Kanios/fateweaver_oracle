@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="blurt/blurt.min.css">
+    <script src="blurt/blurt.min.js"></script>
+    <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
+    <script src="settlement-designer-script.js"></script>
+    <link rel="stylesheet" href="settlement-style.css">
+    <title>Fate Weaver</title>
+    
+</head>
+<body>
+
+    <div class="start-card">
+        <h2 id="fateWeaver">Settlement Designer</h2>
+        <a href="index.html" class="iconZ"><i class="fa-solid fa-house"></i></a>
+        <p>Ready to make an interesting, captivating settlement for your campaign? Choose its name, play with the settings or keep them random, and click "CREATE SETTLEMENT" to finish your masterpiece!</p>
+        <div class="settlement-intro">
+            <h3>NAME AND SIZE:</h3>
+            <input type="text" id="settlementName">
+            <select id="sizeSelect">
+                <option value="Random">Random</option>
+                <option value="Hamlet">Hamlet</option>
+                <option value="Village">Village</option>
+                <option value="Town">Town</option>
+                <option value="City">City</option>
+            </select>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h3>Specialty</h3>
+                    <p>What it's known for.</p>
+                </div>
+                <select id="specialtySelect">
+                    <option value="Random">Random</option>
+                    <option value="Delicious cuisine">Delicious cuisine</option>
+                    <option value="Rude people">Rude people</option>
+                    <option value="Friendly people">Friendly people</option>
+                    <option value="Greedy merchants">Greedy merchants</option>
+                    <option value="Bargain prices">Bargain prices</option>
+                    <option value="Artists and writers">Artists and writers</option>
+                    <option value="Great hero/savior">Great hero/savior</option>
+                    <option value="Flowers/Gardens">Flowers/Gardens</option>
+                    <option value="Hordes of beggars">Hordes of beggars</option>
+                    <option value="Tough warriors">Tough warriors</option>
+                    <option value="Talented mages">Talented mages</option>
+                    <option value="Dark magic">Dark magic</option>
+                    <option value="Decadence">Decadence</option>
+                    <option value="Piety">Piety</option>
+                    <option value="Gambling">Gambling</option>
+                    <option value="Godlessness">Godlessness</option>
+                    <option value="Education">Education</option>
+                    <option value="High fashion">High fashion</option>
+                    <option value="Political intrigue">Political intrigue</option>
+                    <option value="Blatant corruption">Blatant corruption</option>
+                    <option value="Powerful guilds">Powerful guilds</option>
+                    <option value="Strong drinks">Strong drinks</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Legends and folklore">Legends and folklore</option>
+                    <option value="Rich history">Rich history</option>
+                    <option value="Humble people">Humble people</option>
+                    <option value="Stoic people">Stoic people</option>
+                    <option value="Fighting spirit">Fighting spirit</option>
+                    <option value="Patriotism">Patriotism</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Government</h3>
+                    <p>Choose a government type.</p>
+                </div>
+                <select id="classSelect">
+                    <option value="Random">Random</option>
+                    <option value="Autocracy">Autocracy</option>
+                    <option value="Bureaucracy">Bureaucracy</option>
+                    <option value="Democracy">Democracy</option>
+                    <option value="Republic">Republic</option>
+                    <option value="Dictatorship">Dictatorship</option>
+                    <option value="Feudality">Feudality</option>
+                    <option value="Hierarchy">Hierarchy</option>
+                    <option value="Monarchy">Monarchy</option>
+                    <option value="Militocracy">Militocracy</option>
+                    <option value="Plutocracy">Plutocracy</option>
+                    <option value="Technocracy">Technocracy</option>
+                    <option value="Magocracy">Magocracy</option>
+                    <option value="Kleptocracy">Kleptocracy</option>
+                    <option value="Theocracy">Theocracy</option>
+                    <option value="Oligarchy">Oligarchy</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Notable</h3>
+                    <p>Choose a notable trait.</p>
+                </div>
+                <select id="alignmentSelect">
+                    <option value="Random">Random</option>
+                    <option value="Lawful Good">Lawful Good</option>
+                    <option value="Neutral Good">Neutral Good</option>
+                    <option value="Chaotic Good">Chaotic Good</option>
+                    <option value="Lawful Neutral">Lawful Neutral</option>
+                    <option value="True Neutral">True Neutral</option>
+                    <option value="Chaotic Neutral">Chaotic Neutral</option>
+                    <option value="Lawful Evil">Lawful Evil</option>
+                    <option value="Neutral Evil">Neutral Evil</option>
+                    <option value="Chaotic Evil">Chaotic Evil</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container second">
+            <div class="card">
+                <div class="info">
+                    <h3>Race relations</h3>
+                    <p>Choose race demographics.</p>
+                </div>
+                <select id="pastSelect">
+                    <option value="Random">Random</option>
+                    <option value="Harmony">Harmony</option>
+                    <option value="Tension or rivalry">Tension or rivalry</option>
+                    <option value="Racial minority are conquerors">Racial minority are conquerors</option>
+                    <option value="Racial minority are rulers">Racial minority are rulers</option>
+                    <option value="Racial minority are refugees">Racial minority are refugees</option>
+                    <option value="Racial majority oppresses minority">Racial majority oppresses minority</option>
+                    <option value="Racial minority oppresses majority">Racial minority oppresses majority</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Calamity</h3>
+                    <p>Choose a troubling scenario.</p>
+                </div>
+                <select id="highSelect">
+                    <option value="Random">Random</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Dexterity">Dexterity</option>
+                    <option value="Constitution">Constitution</option>
+                    <option value="Intelligence">Intelligence</option>
+                    <option value="Wisdom">Wisdom</option>
+                    <option value="Charisma">Charisma</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Authority</h3>
+                    <p>Choose ruler/government status</p>
+                </div>
+                <select id="lowSelect">
+                    <option value="Random">Random</option>
+                    <option value="Respected, fair, just">Respected, fair, just</option>
+                    <option value="Feared, tyrannical">Feared, tyrannical</option>
+                    <option value="Iron-willed, respected">Iron-willed, respected</option>
+                    <option value="Weak, unreliable">Weak, unreliable</option>
+                    <option value="Illegitimate">Illegitimate</option>
+                    <option value="Controlled by a powerful monster">Controlled by a powerful monster</option>
+                    <option value="Mysterious, anonymous cabal">Mysterious, anonymous cabal</option>
+                    <option value="Power vacuum, open fighting">Power vacuum, open fighting</option>
+                    <option value="Cabal seized power openly">Cabal seized power openly</option>
+                    <option value="Contested leadership, infighting">Contested leadership, infighting</option>
+                    <option value="Claimants/parties compete for power">Claimants/parties compete for power</option>
+                    <option value="Stupid ruler/Idiocracy">Stupid ruler/Idiocracy</option>
+                    <option value="Heavy religious influence">Religious influence</option>
+                    <option value="Heavy guild influence">Guild influence</option>
+                    <option value="Heavy guild influence">Guild influence</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container third">
+            <div class="card">
+                <div class="info">
+                    <h3>Economics</h3>
+                    <p>Choose economic policies.</p>
+                </div>
+                <select id="pastSelect">
+                    <option value="Random">Random</option>
+                    <option value="Regulated">Regulated</option>
+                    <option value="Free market">Free market</option>
+                    <option value="State-controlled">State-controlled</option>
+                    <option value="Autarky">Autarky</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Law</h3>
+                    <p>Choose law enforcement types.</p>
+                </div>
+                <select id="highSelect">
+                    <option value="Random">Random</option>
+                    <option value="Fines">Fines</option>
+                    <option value="Reform">Reform</option>
+                    <option value="Punishment">Punishment</option>
+                    <option value="Harsh punishment">Harsh punishment</option>
+                </select>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h3>Military</h3>
+                    <p>Choose military policies.</p>
+                </div>
+                <select id="lowSelect">
+                    <option value="Random">Random</option>
+                    <option value="No army">No army</option>
+                    <option value="Standing army">Standing army</option>
+                    <option value="Army reserves">Army reserves</option>
+                    <option value="Mercenary armies">Mercenary armies</option>
+                    <option value="Citizen militias">Citizen militias</option>
+                    <option value="National guard">National guard</option>
+                    <option value="Adventurering heroes">Adventuring heroes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="rollButton" onclick="rollChar();">Create settlement</button>
+        </div>
+    </div>
+</body>
+</html>
