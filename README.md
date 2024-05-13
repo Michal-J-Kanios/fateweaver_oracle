@@ -16,7 +16,7 @@ Roll on compact roll tables and string the results together using your imaginati
 - Your friends don't want to play D&D?
 - You never had friends to begin with?
 - You want to try out character builds or engage in creative writing?
-# Whatever the reason, Fate Weaver has got you covered!
+# Whatever the reason, Fate Weaver has got you covered
 With multiple compact roll tables available at the push of a button, you too can enhance your D&D sessions through the power of randomisation!
 ### Have you ever TRIED to play solo?
   If your answer is yes, chances are you've probably noticed how hard it is to act both as the DM and as a player.
