@@ -23,13 +23,17 @@
         <p>Ready to make an interesting, captivating settlement for your campaign? Choose its name, play with the settings or keep them random, and click "CREATE SETTLEMENT" to finish your masterpiece!</p>
         <div class="settlement-intro">
             <h3>NAME AND SIZE:</h3>
-            <input type="text" id="settlementName">
+            <input type="text" id="townName">
             <select id="sizeSelect">
                 <option value="Random">Random</option>
+                <option value="Thorp">Thorp</option>
                 <option value="Hamlet">Hamlet</option>
                 <option value="Village">Village</option>
-                <option value="Town">Town</option>
-                <option value="City">City</option>
+                <option value="Small town">Small town</option>
+                <option value="Large town">Large town</option>
+                <option value="Small city">Small city</option>
+                <option value="Large city">Large city</option>
+                <option value="Metropolis">Metropolis</option>
             </select>
         </div>
         <div class="container">
@@ -76,7 +80,7 @@
                     <h3>Government</h3>
                     <p>Choose a government type.</p>
                 </div>
-                <select id="classSelect">
+                <select id="governmentSelect">
                     <option value="Random">Random</option>
                     <option value="Autocracy">Autocracy</option>
                     <option value="Bureaucracy">Bureaucracy</option>
@@ -100,17 +104,29 @@
                     <h3>Notable</h3>
                     <p>Choose a notable trait.</p>
                 </div>
-                <select id="alignmentSelect">
+                <select id="notableSelect">
                     <option value="Random">Random</option>
-                    <option value="Lawful Good">Lawful Good</option>
-                    <option value="Neutral Good">Neutral Good</option>
-                    <option value="Chaotic Good">Chaotic Good</option>
-                    <option value="Lawful Neutral">Lawful Neutral</option>
-                    <option value="True Neutral">True Neutral</option>
-                    <option value="Chaotic Neutral">Chaotic Neutral</option>
-                    <option value="Lawful Evil">Lawful Evil</option>
-                    <option value="Neutral Evil">Neutral Evil</option>
-                    <option value="Chaotic Evil">Chaotic Evil</option>
+                    <option value="Canals in place of streets">Canals in place of streets</option>
+                    <option value="Massive statue or monument">Massive statue or monument</option>
+                    <option value="Grand temple">Grand temple</option>
+                    <option value="Large fortress">Large fortress</option>
+                    <option value="Verdant parks and orchards">Verdant parks and orchards</option>
+                    <option value="River divides settlement">River divides settlement</option>
+                    <option value="Major trade center">Major trade center</option>
+                    <option value="Headquarters of a powerful family or guild">Headquarters of a powerful family or guild</option>
+                    <option value="Population mostly wealthy">Population mostly wealthy</option>
+                    <option value="Destitute, rundown">Destitute, rundown</option>
+                    <option value="Awful smell (tanneries, open sewers)">Awful smell (tanneries, open sewers)</option>
+                    <option value="Center of trade for one specific good">Center of trade for one specific good</option>
+                    <option value="Site of many battles">Site of many battles</option>
+                    <option value="Important library or archive">Important library or archive</option>
+                    <option value="Worship of all gods banned">Worship of all gods banned</option>
+                    <option value="Sinister reputation">Sinister reputation</option>
+                    <option value="Notable library or academy">Notable library or academy</option>
+                    <option value="Site of important tomb or graveyard">Site of important tomb or graveyard</option>
+                    <option value="Built atop ancient ruins">Built atop ancient ruins</option>
+                    <option value="Former colony">Former colony</option>
+                    <option value="Lair of a powerful, sleeping monster">Lair of a powerful, sleeping monster</option>
                 </select>
             </div>
         </div>
@@ -121,7 +137,7 @@
                     <h3>Race relations</h3>
                     <p>Choose race demographics.</p>
                 </div>
-                <select id="pastSelect">
+                <select id="relationsSelect">
                     <option value="Random">Random</option>
                     <option value="Harmony">Harmony</option>
                     <option value="Tension or rivalry">Tension or rivalry</option>
@@ -137,14 +153,39 @@
                     <h3>Calamity</h3>
                     <p>Choose a troubling scenario.</p>
                 </div>
-                <select id="highSelect">
+                <select id="calamitySelect">
                     <option value="Random">Random</option>
-                    <option value="Strength">Strength</option>
-                    <option value="Dexterity">Dexterity</option>
-                    <option value="Constitution">Constitution</option>
-                    <option value="Intelligence">Intelligence</option>
-                    <option value="Wisdom">Wisdom</option>
-                    <option value="Charisma">Charisma</option>
+                    <option value="Suspected vampire infestation">Suspected vampire infestation</option>
+                    <option value="New cult seeks converts">New cult seeks converts</option>
+                    <option value="Suspected murder of an important figure">Suspected murder of an important figure</option>
+                    <option value="War between rival thieves' guilds">War between rival thieves' guilds</option>
+                    <option value="Plague (disease)">Plague (disease)</option>
+                    <option value="Plague (insects, vermin, fungi)">Plague (insects, vermin, fungi)</option>
+                    <option value="Famine">Famine</option>
+                    <option value="Drought">Drought</option>
+                    <option value="Flooding">Flooding</option>
+                    <option value="Earthquake">Earthquake</option>
+                    <option value="Storms">Storms</option>
+                    <option value="Riots">Riots</option>
+                    <option value="Corrupt officials">Corrupt officials</option>
+                    <option value="Marauding monsters">Marauding monsters</option>
+                    <option value="Rampant monster attacks">Rampant monster attacks</option>
+                    <option value="Undead outbreak">Undead outbreak</option>
+                    <option value="Powerful wizard has moved into the settlement">Powerful wizard has moved into the settlement</option>
+                    <option value="Economic depression">Economic depression</option>
+                    <option value="Disrupted trade">Disrupted trade</option>
+                    <option value="Prophecy of doom">Prophecy of doom</option>
+                    <option value="Brink of war">Brink of war</option>
+                    <option value="Civil war brewing">Civil war brewing</option>
+                    <option value="Internal strife">Internal strife</option>
+                    <option value="Anarchy">Anarchy</option>
+                    <option value="Besieged by enemies">Besieged by enemies</option>
+                    <option value="Dungeon discovered">Dungeon discovered</option>
+                    <option value="Chain of abductions">Chain of abductions</option>
+                    <option value="Religious sects struggle for power">Religious sects struggle for power</option>
+                    <option value="Serial killer on the loose">Serial killer on the loose</option>
+                    <option value="Monsters fight over territory">Monsters fight over territory</option>
+                    <option value="Powerful faction/monster demands tributes">Powerful faction/monster demands tributes</option>
                 </select>
             </div>
             <div class="card">
@@ -152,7 +193,7 @@
                     <h3>Authority</h3>
                     <p>Choose ruler/government status</p>
                 </div>
-                <select id="lowSelect">
+                <select id="authoritySelect">
                     <option value="Random">Random</option>
                     <option value="Respected, fair, just">Respected, fair, just</option>
                     <option value="Feared, tyrannical">Feared, tyrannical</option>
@@ -166,9 +207,9 @@
                     <option value="Contested leadership, infighting">Contested leadership, infighting</option>
                     <option value="Claimants/parties compete for power">Claimants/parties compete for power</option>
                     <option value="Stupid ruler/Idiocracy">Stupid ruler/Idiocracy</option>
-                    <option value="Heavy religious influence">Religious influence</option>
-                    <option value="Heavy guild influence">Guild influence</option>
-                    <option value="Heavy guild influence">Guild influence</option>
+                    <option value="Heavy religious influence">Heavy religious influence</option>
+                    <option value="Heavy guild influence">Heavy guild influence</option>
+                    <option value="Heavy mafia influence">Heavy mafia influence</option>
                 </select>
             </div>
         </div>
@@ -179,7 +220,7 @@
                     <h3>Economics</h3>
                     <p>Choose economic policies.</p>
                 </div>
-                <select id="pastSelect">
+                <select id="economicsSelect">
                     <option value="Random">Random</option>
                     <option value="Regulated">Regulated</option>
                     <option value="Free market">Free market</option>
@@ -192,9 +233,9 @@
                     <h3>Law</h3>
                     <p>Choose law enforcement types.</p>
                 </div>
-                <select id="highSelect">
+                <select id="lawSelect">
                     <option value="Random">Random</option>
-                    <option value="Fines">Fines</option>
+                    <option value="Fining">Fining</option>
                     <option value="Reform">Reform</option>
                     <option value="Punishment">Punishment</option>
                     <option value="Harsh punishment">Harsh punishment</option>
@@ -205,7 +246,7 @@
                     <h3>Military</h3>
                     <p>Choose military policies.</p>
                 </div>
-                <select id="lowSelect">
+                <select id="militarySelect">
                     <option value="Random">Random</option>
                     <option value="No army">No army</option>
                     <option value="Standing army">Standing army</option>
@@ -213,13 +254,13 @@
                     <option value="Mercenary armies">Mercenary armies</option>
                     <option value="Citizen militias">Citizen militias</option>
                     <option value="National guard">National guard</option>
-                    <option value="Adventurering heroes">Adventuring heroes</option>
+                    <option value="Adventuring heroes">Adventuring heroes</option>
                 </select>
             </div>
         </div>
 
         <div class="buttons">
-            <button id="rollButton" onclick="rollChar();">Create settlement</button>
+            <button id="rollButton" onclick="rollSettlement();">Create settlement</button>
         </div>
     </div>
 </body>
