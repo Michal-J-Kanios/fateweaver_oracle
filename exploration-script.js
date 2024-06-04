@@ -2859,7 +2859,7 @@
         }
         else if(selectedType == "Death Trap"){
             const chamber = [
-                "Antechamber for spectators",
+                "Antechamber for spectators", 
                 "Waiting room",
                 "Waiting room",
                 "Guardroom fortified against intruders",
