@@ -4812,29 +4812,63 @@
             ]
             const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
             blurt({
-                title: 'Art Objects',
+                title: 'Magical Furnishings',
                 text: tieredLoot2[tieredLoot2Index],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
         }
-        else if (selectedTier == "750 GP Art Objects"){
+        else if (selectedTier == "Personal"){
             const tieredLoot3 = [
-                "Silver chaice set with moonstones",
-                "Silver-plated steel longsword with jet set in hilt",
-                "Carved harp of exotic wood with ivory inlay and zircon gems",
-                "Small gold idol",
-                "Box of expensive, hand-painted wargaming miniatures",
-                "Bottle stopper cork embossed with a gold leaf and set with amethysts",
-                "Ceremonial electrum dagger with a black pearl in the pommel",
-                "Silver and gold brooch",
-                "Obsidian statuette with gold fittings and inlay",
-                "Painted gold war mask"
+                "Awl",
+                "Bandages",
+                "Basin",
+                "Basket",
+                "Basket",
+                "Bottle",
+                "Bottle",
+                "Bowl",
+                "Box",
+                "Brush",
+                "Brush",
+                "Candle",
+                "Candle snuffer",
+                "Candlestick",
+                "Cane or walking stick",
+                "Case",
+                "Casket (small)",
+                "Coffer",
+                "Coffer",
+                "Cologne or perfume",
+                "Comb",
+                "Cup",
+                "Decanter",
+                "Dish",
+                "Dish",
+                "Ear spoon",
+                "Ewer",
+                "Flagon, mug, or tankard",
+                "Flask or jar",
+                "Flask or jar",
+                "Food",
+                "Fork",
+                "Grater",
+                "Grinder",
+                "Horn, drinking",
+                "Hourglass",
+                "Jug or pitcher",
+                "Kettle",
+                "Key",
+                "Knife",
+                "Knucklebones or dice",
+                "Ladle",
+                "Lamp or lantern",
+                "Lamp or lantern"
             ]
             const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
             blurt({
-                title: 'Art Objects',
+                title: 'Personal Furnishings',
                 text: tieredLoot3[tieredLoot3Index],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
