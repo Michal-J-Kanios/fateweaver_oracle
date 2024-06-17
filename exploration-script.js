@@ -4617,5 +4617,174 @@
         });
     }
 
+    function rollFurnishing() {
+        selectedTier = document.getElementById("furnitureType").value;
+        if(selectedTier == "Religious"){
+            const tieredLoot1 = [
+                "Altar",
+                "Altar",
+                "Altar",
+                "Altar",
+                "Altar",
+                "Bells",
+                "Bells",
+                "Bells",
+                "Brazier",
+                "Brazier",
+                "Brazier",
+                "Candelabra",
+                "Candles",
+                "Candles",
+                "Candlesticks",
+                "Cassocks",
+                "Chimes",
+                "Cloth, altar",
+                "Cloth, altar",
+                "Columns or pillar",
+                "Columns or pillar",
+                "Columns or pillar",
+                "Columns or pillar",
+                "Curtain or tapestry",
+                "Drum",
+                "Font",
+                "Font",
+                "Gong",
+                "Gong",
+                "Holy or unholy symbol",
+                "Holy or unholy symbol",
+                "Holy or unholy symbol",
+                "Holy or unholy symbol",
+                "Holy or unholy symbol",
+                "Holy or unholy symbol",
+                "Holy or unholy writings",
+                "Holy or unholy writings",
+                "Idol",
+                "Idol",
+                "Idol",
+                "Idol",
+                "Idol",
+                "Idol",
+                "Incense burner",
+                "Incense burner",
+                "Incense burner",
+                "Incense burner",
+                "Incense burner",
+                "Kneeling bench",
+                "Lamp",
+                "Lamp",
+                "Lamp",
+                "Lamp",
+                "Lectern",
+                "Mosaic",
+                "Offertory container",
+                "Offertory container",
+                "Offertory container",
+                "Paintings or frescoes",
+                "Pews",
+                "Pews",
+                "Pipes, musical",
+                "Prayer rug",
+                "Pulpit",
+                "Rail",
+                "Robes",
+                "Robes",
+                "Robes",
+                "Robes",
+                "Screen",
+                "Screen",
+                "Shrine",
+                "Shrine",
+                "Shrine",
+                "Shrine",
+                "Shrine",
+                "Side chairs",
+                "Stand",
+                "Stand",
+                "Statue",
+                "Statue",
+                "Statue",
+                "Throne",
+                "Thurible",
+                "Thurible",
+                "Tripod",
+                "Tripod",
+                "Tripod",
+                "Tripod",
+                "Tripod",
+                "Vestments",
+                "Vestments",
+                "Vestments",
+                "Vestments",
+                "Vestments",
+                "Vestments",
+                "Vestments",
+                "Votive light",
+                "Votive light",
+                "Whistle"
+            ]
+            const tieredLoot1Index = Math.floor(Math.random() * tieredLoot1.length)
+            blurt({
+                title: 'Religious Furnishings',
+                text: tieredLoot1[tieredLoot1Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "Magical"){
+            const tieredLoot2 = [
+                "Gold ring set with bloodstones",
+                "Carved ivory statuette",
+                "Large gold bracelet",
+                "Silver necklace with a gemstone pendant",
+                "Bronze crown",
+                "Silk robe with gold embroidery",
+                "Large well-made tapestry",
+                "Brass mug with jade inlay",
+                "Box of turquoise animal figurines",
+                "Gold bird cage with electrum filigree"
+            ]
+            const tieredLoot2Index = Math.floor(Math.random() * tieredLoot2.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot2[tieredLoot2Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if (selectedTier == "750 GP Art Objects"){
+            const tieredLoot3 = [
+                "Silver chaice set with moonstones",
+                "Silver-plated steel longsword with jet set in hilt",
+                "Carved harp of exotic wood with ivory inlay and zircon gems",
+                "Small gold idol",
+                "Box of expensive, hand-painted wargaming miniatures",
+                "Bottle stopper cork embossed with a gold leaf and set with amethysts",
+                "Ceremonial electrum dagger with a black pearl in the pommel",
+                "Silver and gold brooch",
+                "Obsidian statuette with gold fittings and inlay",
+                "Painted gold war mask"
+            ]
+            const tieredLoot3Index = Math.floor(Math.random() * tieredLoot3.length)
+            blurt({
+                title: 'Art Objects',
+                text: tieredLoot3[tieredLoot3Index],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No value selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
+    }
+
 
     
