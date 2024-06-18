@@ -85,38 +85,38 @@
         <div class="card">
             <div class="info">
                 <h3>Event Meaning</h3>
-                <p>An added complication.</p>
+                <p>Use this when you roll "Ambiguous Event" in the Event Focus table.</p>
             </div>
-            <button class="rollButton" onclick="rollTwist();">ROLL</button>
+            <button class="rollButton" onclick="rollMeaning();">ROLL</button>
         </div>
     </div>
 
     <div class="blank">
-        <h1>Wilderness</h1>
+        <h1>NPCs</h1>
         <p>
-            <i>"The world is your oyster."</i><br>
+            <i>"Humans are social creatures."</i><br>
         </p>
     </div>
 
     <div class="container fifth">
         <div class="card">
             <div class="info">
-                <h3>Weather</h3>
-                <p>What the climate is like.</p>
+                <h3>Role</h3>
+                <p>What's the character's role?</p>
             </div>
             <button class="rollButton" onclick="rollWeather();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Creatures</h3>
-                <p>What are the local creatures doing (can be humanoids too).</p>
+                <h3>Personality</h3>
+                <p>What are the character's personality traits?</p>
             </div>
             <button class="rollButton" onclick="rollArea();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Weird Locales</h3>
-                <p>A supernatural twist to spice up a location.</p>
+                <h3>Goals</h3>
+                <p>What are the character's goals?.</p>
             </div>
             <button class="rollButton" onclick="rollWeird();">ROLL</button>
         </div>
@@ -128,31 +128,33 @@
                 <h3>Encounter</h3>
                 <p>Roll for biome-themed encounters.</p>
             </div>
-            <select id="biomes">
-                <option value="Forest">Forest</option>
-                <option value="Hill">Hill</option>
-                <option value="Mountain">Mountain</option>
-                <option value="Grassland">Grassland</option>
-                <option value="Swamp">Swamp</option>
-                <option value="Arctic">Arctic</option>
-                <option value="Jungle">Jungle</option>
-                <option value="Underwater">Underwater</option>
-                <option value="Underdark">Underdark</option>
-            </select>
-            <button class="rollButton" onclick="rollEncounter();">ROLL</button>
+            <button class="rollButton" onclick="">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Storms</h3>
-                <p>Roll for extreme weather and its effects.</p>
-                <select id="weatherEffects">
-                    <option value="Thunder">Thunder</option>
-                    <option value="Hail">Hail</option>
-                    <option value="Wildfires">Wildfires</option>
-                    <option value="Wild Magic Storm">Wild Magic Storm</option>
-                </select>
+                <h3>Generator</h3>
+                <p>Use the built-in NPC generator to create a non-player character.</p>
             </div>
-            <button class="rollButton" onclick="rollStorms();">ROLL</button>
+            <a href="npc-generator.html">GENERATE</a>
+            <style>
+                a {
+                    display: inline-block;
+                    background-color: #071217;
+                    color: #F6EDEA;
+                    text-decoration: none;
+                    padding: 0.7rem 2rem;
+                    font-weight: 700;
+                    border-radius: 0.7rem;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+                    font-size: 1.2rem;
+                }
+                a:hover {
+                    background-color: #153b9b;
+                    border: 4px outset #1996ef;
+                    transition: all 0.375s;
+                }
+            </style>
+            </button>
         </div>
         <div class="card">
             <div class="info">
