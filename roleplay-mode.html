@@ -56,7 +56,7 @@
                 <option value="Very Unlikely">Very Unlikely</option>
                 <option value="Near Impossible">Near Impossible</option>
             </select>
-            <button class="rollButton" onclick="rollAction();">ROLL</button>
+            <button class="rollButton" onclick="rollFate();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
@@ -70,48 +70,24 @@
     <div class="container third">
         <div class="card">
             <div class="info">
-                <h3>Very Likely</h3>
-                <p>Random fate roller skewed to unlikely scenarios.</p>
+                <h3>NPC Reactions</h3>
+                <p>How does an NPC react to whatever just happened?.</p>
             </div>
-            <button class="rollButton" onclick="rollRandomEvent();">ROLL</button>
+            <button class="rollButton" onclick="rollReactions();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Very Unlikely</h3>
-                <p>Goal of your quest.</p>
+                <h3>Event Focus</h3>
+                <p>The context of a random event.</p>
             </div>
-            <button class="rollButton" onclick="rollObjective();">ROLL</button>
+            <button class="rollButton" onclick="rollFocus();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Twist</h3>
+                <h3>Event Meaning</h3>
                 <p>An added complication.</p>
             </div>
             <button class="rollButton" onclick="rollTwist();">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container fourth">
-        <div class="card">
-            <div class="info">
-                <h3>Theme</h3>
-                <p>The motif of your quest. A special flair, if you will.</p>
-            </div>
-            <button class="rollButton" onclick="rollTheme();">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Enemies</h3>
-                <p>Who will stand in your way (might clash with theme).</p>
-            </div>
-            <button class="rollButton" onclick="rollEnemies();">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Allies</h3>
-                <p>Who will help you (optional if allies don't make sense in the quest).</p>
-            </div>
-            <button class="rollButton" onclick="rollAllies();">ROLL</button>
         </div>
     </div>
 
