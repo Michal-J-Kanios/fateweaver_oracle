@@ -507,5 +507,70 @@
         });
     }
 
+    function npcRole() {
+        const role= [
+            "Criminal",
+            "Healer",
+            "Researcher",
+            "Scholar",
+            "Foreigner",
+            "Merchant",
+            "Collector",
+            "Agent",
+            "Ambassador",
+            "Assassin",
+            "Government official",
+            "Adventurer",
+            "Judge",
+            "Historian",
+            "Mage",
+            "Military official",
+            "Rebel",
+            "Servant",
+            "Spy",
+            "Business owner",
+            "Artisan",
+            "Villain",
+            "Gang leader/member",
+            "Gambler",
+            "Traveler",
+            "Performance",
+            "Socialite",
+            "Mercenary",
+            "Leader",
+            "Mystic",
+            "Artist",
+            "Hunter",
+            "Outcast",
+            "Heretic",
+            "Guard",
+            "Investigator",
+            "Aristocrat",
+            "Apprentice/Student",
+            "Emissary",
+            "Fugitive",
+            "Law enforcement",
+            "Celebrity",
+            "Bounty hunter",
+            "Explorer",
+            "Prophet",
+            "Cultist",
+            "Innkeeper",
+            "Alchemist",
+            "Farmer",
+            "Smuggler",
+            "Wanderer",
+            "Outside"
+        ]
+        const roleIndex = Math.floor(Math.random() * role.length)
+        blurt({
+            title: 'NPC Reactions',
+            text: role[roleIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
 
     
