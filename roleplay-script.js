@@ -560,12 +560,77 @@
             "Farmer",
             "Smuggler",
             "Wanderer",
-            "Outside"
+            "Outsider"
         ]
         const roleIndex = Math.floor(Math.random() * role.length)
         blurt({
-            title: 'NPC Reactions',
+            title: 'NPC Role',
             text: role[roleIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function npcPersonality() {
+        const personality= [
+            "Stoic",
+            "Intolerant",
+            "Friendly",
+            "Cunning",
+            "Kind",
+            "Pious",
+            "Hardhearted",
+            "Stern",
+            "Wary",
+            "Cynical",
+            "Irritable",
+            "Nervous",
+            "Dangerous",
+            "Cheery",
+            "Smug",
+            "Clever",
+            "Bold",
+            "Tenacious",
+            "Cautious",
+            "Hot-tempered",
+            "Aggressive",
+            "Greedy",
+            "Obsessed",
+            "Secretive",
+            "Mischievous",
+            "Paranoid",
+            "Sarcastic",
+            "Aloof",
+            "Strong-willed",
+            "Rude",
+            "Bitter",
+            "Charming",
+            "Angry",
+            "Suspicious",
+            "Violent",
+            "Cruel",
+            "Gloomy",
+            "Proud",
+            "Relaxed",
+            "Confident",
+            "Generous",
+            "Agreeable",
+            "Apathetic",
+            "Critical",
+            "Deceitful",
+            "Conceited",
+            "Compassionate",
+            "Crude",
+            "Elitist",
+            "Charitable",
+            "Laconic",
+            "Brave"
+        ]
+        const personalityIndex = Math.floor(Math.random() * personality.length)
+        blurt({
+            title: 'NPC Personality',
+            text: personality[personalityIndex],
             type: 'info',
             okButtonText: 'Click anywhere to exit',
             escapable: true
