@@ -14,7 +14,6 @@
     <title>Roleplay Mode</title>
 </head>
 <body>
-    
     <div class="container">
         <p id="smallWeaver">Fate Weaver</p>
         <h1>Roleplay Mode</h1>
@@ -27,14 +26,12 @@
         <a id="domek" href="index.html">Home Page</a>
         <br><br><br><br>
     </div>
-
     <div class="blank">
         <h1>Fate</h1>
         <p>
             <i>"Tell me the future, oh wise one."</i><br>
         </p>
     </div>
-
     <div class="container second">
         <div class="card">
             <div class="info">
@@ -66,14 +63,13 @@
             <button class="rollButton" onclick="rollYesNo2();">ROLL</button>
         </div>
     </div>
-
     <div class="container third">
         <div class="card">
             <div class="info">
-                <h3>WIP</h3>
-                <p>I'LL PUT SOMETHING HERE LATER.</p>
+                <h3>Special Encounter</h3>
+                <p>Roll a special encounter if you need a strong plot hook.</p>
             </div>
-            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+            <button class="rollButton" onclick="rollSpecial();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
@@ -90,14 +86,12 @@
             <button class="rollButton" onclick="rollMeaning();">ROLL</button>
         </div>
     </div>
-
     <div class="blank">
         <h1>NPCs</h1>
         <p>
             <i>"Humans are social creatures."</i><br>
         </p>
     </div>
-
     <div class="container fifth">
         <div class="card">
             <div class="info">
@@ -116,23 +110,22 @@
         <div class="card">
             <div class="info">
                 <h3>Goals</h3>
-                <p>What are the character's goals?.</p>
+                <p>What are the character's goals?</p>
             </div>
-            <button class="rollButton" onclick="npcGoals();">ROLL</button>
+            <button class="rollButton" onclick="npcGoal();">ROLL</button>
         </div>
     </div>
-
     <div class="container sixth">
         <div class="card">
             <div class="info">
-                <h3>NPC Reactions</h3>
-                <p>How does an NPC react to whatever just happened?.</p>
+                <h3>NPC Attitude</h3>
+                <p>What is the character's attitude?</p>
             </div>
             <button class="rollButton" onclick="rollReactions();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Generator</h3>
+                <h3>NPC Generator</h3>
                 <p>Use the built-in NPC generator to create a non-player character.</p>
             </div>
             <a href="npc-generator.html">GENERATE</a>
@@ -158,258 +151,31 @@
         </div>
         <div class="card">
             <div class="info">
-                <h3>Terrain</h3>
-                <p>Roll for exciting terrain quirks.</p>
+                <h3>Settlement Designer</h3>
+                <p>Use the built-in settlement designer to create a town on the fly .</p>
             </div>
-            <button class="rollButton" onclick="rollTerrain();">ROLL</button>
+            <a href="settlement-designer.html">GENERATE</a>
+            <style>
+                a {
+                    display: inline-block;
+                    background-color: #071217;
+                    color: #F6EDEA;
+                    text-decoration: none;
+                    padding: 0.7rem 2rem;
+                    font-weight: 700;
+                    border-radius: 0.7rem;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+                    font-size: 1.2rem;
+                }
+                a:hover {
+                    background-color: #153b9b;
+                    border: 4px outset #1996ef;
+                    transition: all 0.375s;
+                }
+            </style>
+            </button>
         </div>
     </div>
-
-    <div class="blank">
-        <h1>Dungeons</h1>
-        <p>
-            <i>"You crawl before you run."</i><br>
-        </p>
-    </div>
-
-    <div class="container seventh">
-        <div class="card">
-            <div class="info">
-                <h3>Location</h3>
-                <p>Roll or choose where your dungeon is.</p>
-            </div>
-            <select id="dungeonLocation">
-                <option value="In a forest">In a forest</option>
-                <option value="In a building">In a building</option>
-                <option value="In a chasm">In a chasm</option>
-                <option value="In a cliff face">In a cliff face</option>
-                <option value="In a jungle">In a jungle</option>
-                <option value="In a gorge">In a gorge</option>
-                <option value="In a mountain pass">In a mountain pass</option>
-                <option value="In a swamp">In a swamp</option>
-                <option value="In a glacier">In a glacier</option>
-                <option value="In a desert">In a desert</option>
-                <option value="On a mountain peak">On a mountain peak</option>
-                <option value="On an island">On an island</option>
-                <option value="On a promontory">On a promontory</option>
-                <option value="Beneath a graveyard">Beneath a graveyard</option>
-                <option value="Beneath a castle">Beneath a castle</option>
-                <option value="Beneath a city">Beneath a city</option>
-                <option value="Beneath a temple">Beneath a temple</option>
-                <option value="Beneath ruins">Beneath ruins</option>
-                <option value="Catacombs">Catacombs</option>
-                <option value="Underwater">Underwater</option>
-                <option value="Exotic">Roll Exotic</option>
-            </select>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Exotic</h3>
-                <p>Roll or choose an EXOTIC location.</p>
-                <select id="exoticLocation">
-                    <option value="Among tree branches">Among tree branches</option>
-                    <option value="Around a geyser">Around a geyser</option>
-                    <option value="Behind a waterfall">Behind a waterfall</option>
-                    <option value="Buried in an avalanche">Buried in an avalanche</option>
-                    <option value="Buried in a sandstorm">Buried in a sandstorm</option>
-                    <option value="Sunken Structure">Sunken Structure</option>
-                    <option value="In a castle">In a castle</option>
-                    <option value="Floating on the sea">Floating on the sea</option>
-                    <option value="In a volcano">In a volcano</option>
-                    <option value="In a meteorite">In a meteorite</option>
-                    <option value="In the Feywild">In the Feywild</option>
-                    <option value="In the Shadowfell">In the Shadowfell</option>
-                    <option value="On the back of a gargantuan">On the back of a gargantuan creature</option>
-                    <option value="Inside a magical dome of force">Inside a magical dome of force</option>
-                    <option value="Inside a magnificent mansion">Inside a magnificent mansion</option>
-                </select>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Creator</h3>
-                <p>Roll who created your dungeon.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container eighth">
-        <div class="card">
-            <div class="info">
-                <h3>Inhabitants</h3>
-                <p>Roll for creatures, cults, and religious groups present in your dungeon.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Alignment</h3>
-                <p>Roll for alignment of your dungeon's residents</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Purpose</h3>
-                <p>Roll for the purpose of your dungeon.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container ninth">
-        <div class="card">
-            <div class="info">
-                <h3>History</h3>
-                <p>Roll for key events of your dungeon's history.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Obstacles</h3>
-                <p>Roll for something in the way.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Random Trap</h3>
-                <p>Roll for the room's trap(s) (trigger, severity, effect).</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container tenth">
-        <div class="card">
-            <div class="info">
-                <h3>Room Type</h3>
-                <p>Roll to quickly discern what's in a room.</p>
-            </div>
-            <button class="rollButton" onclick="rollRoomType();">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Special Encounter</h3>
-                <p>Roll if you got this in "Room Type".</p>
-            </div>
-            <button class="rollButton" onclick="rollSencounter();">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Random Treasure</h3>
-                <p>Roll for random valuables.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container eleventh">
-        <div class="card">
-            <div class="info">
-                <h3>Chamber Purpose</h3>
-                <p>Choose dungeon type and see.</p>
-                <select id="dungeonType">
-                    <option value="Generic">Generic</option>
-                    <option value="Maze">Maze</option>
-                    <option value="Tomb">Tomb</option>
-                    <option value="Lair">Lair</option>
-                    <option value="Mine">Mine</option>
-                    <option value="Stronghold">Stronghold</option>
-                    <option value="Treasure Vault">Treasure Vault</option>
-                    <option value="Temple or Shrine">Temple or Shrine</option>
-                    <option value="Death Trap">Death Trap</option>
-                    <option value="Planar Gate">Planar Gate</option>
-                </select>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Chamber Contents</h3>
-                <p>When "Room Type" is too vague.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Trick Objects</h3>
-                <p>Quirky random object with a quirky random trick effect.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="blank">
-        <h1>Flavour</h1>
-        <p>
-            <i>"All is bland when lacking in flavour."</i><br>
-        </p>
-    </div>
-
-    <div class="container twelve">
-        <div class="card">
-            <div class="info">
-                <h3>Dressing</h3>
-                <p>Choose Noise/Air/Odor and roll effect.</p>
-                <select id="dressingType">
-                    <option value="Noise">Noise</option>
-                    <option value="Air">Air</option>
-                    <option value="Odor">Odor</option>
-                </select>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>General Features</h3>
-                <p>Immersive features and items of a room/dungeon.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Furniture</h3>
-                <p>Roll for the room's general furnishing and appointments.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-    <div class="container thirteenth">
-        <div class="card">
-            <div class="info">
-                <h3>Specific Furnishing</h3>
-                <p>Choose furniture style and roll.</p>
-                <select id="furnitureType">
-                    <option value="Religious">Religious</option>
-                    <option value="Magic">Magic</option>
-                    <option value="Utensils">Utensils</option>
-                </select>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Container Contents</h3>
-                <p>Roll to see what's inside a random container.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-        <div class="card">
-            <div class="info">
-                <h3>Books and Scrolls</h3>
-                <p>Roll to see what's written in a random book/scroll/tome.</p>
-            </div>
-            <button class="rollButton" onclick="">ROLL</button>
-        </div>
-    </div>
-
-
     <div class="blank-2">
         <div class="footer">
             <div class="column">
