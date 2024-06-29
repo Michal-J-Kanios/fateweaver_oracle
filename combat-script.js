@@ -11,15 +11,28 @@
 
     //================
 
-    function rollYesNo() {
-        const yesNo= [
-            "Yes",
-            "No"
+    function rollEnemyType() {
+        const enemyType= [
+            "Aberration",
+            "Beast",
+            "Humanoid/Giant",
+            "Celestial",
+            "Construct",
+            "Dragon",
+            "Elemental",
+            "Fey",
+            "Fiend",
+            "Monstrosity",
+            "Ooze",
+            "Plant",
+            "Undead: Bony",
+            "Undead: Bloody",
+            "General/Misc"
         ]
-        const yesNoIndex = Math.floor(Math.random() * yesNo.length)
+        const enemyTypeIndex = Math.floor(Math.random() * enemyType.length)
         blurt({
-            title: 'Yes or No?',
-            text: yesNo[yesNoIndex],
+            title: 'Enemy Type',
+            text: enemyType[enemyTypeIndex],
             type: 'info',
             okButtonText: 'Click anywhere to exit',
             escapable: true
@@ -48,142 +61,81 @@
 
     function rollFate() {
         selectedFate = document.getElementById("fateSelect").value;
-        if(selectedFate == "Almost Certain"){
+        if(selectedFate == "Lightly Wounded"){
             const fatum = [
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "No, but...",
-                "No"
+                "Discolored",
+                "Scratched",
+                "Bruised",
+                "Harmful",
+                "Dented",
+                "Hurt",
+                "Marred",
+                "Flustered",
+                "Scraped",
+                "Nicked",
+                "Blotchy",
+                "Grazed",
+                "Damaged",
+                "Slashed",
+                "Stubborn"
             ]
             const fatumIndex = Math.floor(Math.random() * fatum.length)
             blurt({
-                title: 'Random Fate',
+                title: 'Enemy Health',
                 text: fatum[fatumIndex],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
         }
-        else if(selectedFate == "Very Likely"){
+        else if(selectedFate == "Heavily Wounded"){
             const fatum = [
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "No, but...",
-                "No",
-                "No, and..."
+                "Ragged",
+                "Injured",
+                "Bloodied",
+                "Hurt",
+                "Cracked",
+                "Distressed",
+                "Bashed",
+                "Shaken",
+                "Pounded",
+                "Mauled",
+                "Wobbly",
+                "Hacked",
+                "Battered",
+                "Torn",
+                "Worried"
             ]
             const fatumIndex = Math.floor(Math.random() * fatum.length)
             blurt({
-                title: 'Random Fate',
+                title: 'Enemy Health',
                 text: fatum[fatumIndex],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
                 escapable: true
             });
         }
-        else if(selectedFate == "Likely"){
+        else if(selectedFate == "Near Death"){
             const fatum = [
-                "Yes, and...",
-                "Yes, and...",
-                "Yes",
-                "Yes",
-                "Yes, but...",
-                "Yes, but...",
-                "No, but...",
-                "No",
-                "No, and..."
+                "Fragmented",
+                "Thrashed",
+                "Staggered",
+                "Faded",
+                "Fragile",
+                "Wrecked",
+                "Ruined",
+                "Scathed",
+                "Weak",
+                "Beaten",
+                "Sloshy",
+                "Tattered",
+                "Crumbling",
+                "Mangled",
+                "Pained"
             ]
             const fatumIndex = Math.floor(Math.random() * fatum.length)
             blurt({
-                title: 'Random Fate',
-                text: fatum[fatumIndex],
-                type: 'info',
-                okButtonText: 'Click anywhere to exit',
-                escapable: true
-            });
-        }
-        else if(selectedFate == "Unlikely"){
-            const fatum = [
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and..."
-            ]
-            const fatumIndex = Math.floor(Math.random() * fatum.length)
-            blurt({
-                title: 'Random Fate',
-                text: fatum[fatumIndex],
-                type: 'info',
-                okButtonText: 'Click anywhere to exit',
-                escapable: true
-            });
-        }
-        else if(selectedFate == "Very Unlikely"){
-            const fatum = [
-                "Yes, and...",
-                "Yes",
-                "Yes, but...",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and..."
-            ]
-            const fatumIndex = Math.floor(Math.random() * fatum.length)
-            blurt({
-                title: 'Random Fate',
-                text: fatum[fatumIndex],
-                type: 'info',
-                okButtonText: 'Click anywhere to exit',
-                escapable: true
-            });
-        }
-        else if(selectedFate == "Near Impossible"){
-            const fatum = [
-                "Yes, and...",
-                "Yes",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and...",
-                "No, but...",
-                "No",
-                "No, and..."
-            ]
-            const fatumIndex = Math.floor(Math.random() * fatum.length)
-            blurt({
-                title: 'Random Fate',
+                title: 'Enemy Health',
                 text: fatum[fatumIndex],
                 type: 'info',
                 okButtonText: 'Click anywhere to exit',
@@ -199,15 +151,236 @@
                 escapable: true
             });
         }
-        //REFERENCE
-        /*const weatherIndex = Math.floor(Math.random() * weather.length)
-        blurt({
-            title: 'Weather',
-            text: weather[weatherIndex],
-            type: 'info',
-            okButtonText: 'Click anywhere to exit',
-            escapable: true
-        });*/
+    }
+
+    function rollActivities() {
+        selectedActivityType = document.getElementById("creatureSelect").value;
+        if(selectedActivityType == "Mindless"){
+            const activity = [
+                "Being eaten/consumed",
+                "Being killed/butchered/harvested",
+                "Blind/lame/insensate",
+                "Congregating/amassing/clustering",
+                "Consuming/eating/feeding",
+                "Decoy/construct/fake/illusion",
+                "Digging/burrowing",
+                "Diseased/sick/poisoned",
+                "Dismembering/taking apart",
+                "Dying/dead",
+                "Fighting/battling",
+                "Frenzied/berserk/rabid",
+                "Giving birth/hatching/dividing",
+                "Going in circles/lost",
+                "Killing/butchering",
+                "Meandering aimlessly",
+                "Mutated/conjoined/albino",
+                "Nothing",
+                "Tangled/stuck",
+                "Trapped/caged"
+            ]
+            const activityIndex = Math.floor(Math.random() * activity.length)
+            blurt({
+                title: 'What are those creatures doing?',
+                text: activity[activityIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedActivityType == "Animalistic"){
+            const activity = [
+                "Being eaten/consumed",
+                "Being killed/butchered/harvested",
+                "Blind/lame/insensate",
+                "Congregating/amassing/clustering",
+                "Consuming/eating/feeding",
+                "Decoy/construct/fake/illusion",
+                "Digging/burrowing",
+                "Diseased/sick/poisoned",
+                "Dismembering/taking apart",
+                "Dying/dead",
+                "Fighting/battling",
+                "Frenzied/berserk/rabid",
+                "Giving birth/hatching/dividing",
+                "Going in circles/lost",
+                "Killing/butchering",
+                "Meandering aimlessly",
+                "Mutated/conjoined/albino",
+                "Nothing",
+                "Tangled/stuck",
+                "Trapped/caged",
+                "Being eaten/consumed",
+                "Being killed/butchered/harvested",
+                "Blind/lame/insensate",
+                "Congregating/amassing/clustering",
+                "Consuming/eating/feeding",
+                "Decoy/construct/fake/illusion",
+                "Digging/burrowing",
+                "Diseased/sick/poisoned",
+                "Dismembering/taking apart",
+                "Dying/dead",
+                "Fighting/battling",
+                "Frenzied/berserk/rabid",
+                "Giving birth/hatching/dividing",
+                "Going in circles/lost",
+                "Killing/butchering",
+                "Meandering aimlessly",
+                "Mutated/conjoined/albino",
+                "Nothing",
+                "Tangled/stuck",
+                "Trapped/caged",
+
+                "Caring for/watching over someone",
+                "Chasing/pursuing",
+                "Competing/challenging/tourneying",
+                "Crying/mourning",
+                "Displaying/signaling/calling",
+                "Feasting/gorging",
+                "Fleeing/routing",
+                "Foraging/seeking food",
+                "Gathering or marshalling resources",
+                "Grooming/preening/dressing up",
+                "Having a psychotic episode",
+                "Huddling/cuddling/comforting",
+                "Marking territory/claiming land",
+                "Mating/flirting/trysting",
+                "Migrating/moving to a new home",
+                "Patrolling/guarding/watching",
+                "Playing/frolicking/gaming/sporting",
+                "Quarreling/scuffling/arguing",
+                "Resting/meditating",
+                "Searching/seeking",
+                "Seeking shelter or higher ground",
+                "Sleeping/napping",
+                "Stalking/tracking",
+                "Starving/begging",
+                "Stumbling around disoriented",
+                "Taking care of young/children",
+                "Training/trained/domesticated",
+                "Undead version of creature",
+                "Wandering/drifting",
+                "Wounded/injured",
+                "Caring for/watching over someone",
+                "Chasing/pursuing",
+                "Competing/challenging/tourneying",
+                "Crying/mourning",
+                "Displaying/signaling/calling",
+                "Feasting/gorging",
+                "Fleeing/routing",
+                "Foraging/seeking food",
+                "Gathering or marshalling resources",
+                "Grooming/preening/dressing up",
+                "Having a psychotic episode",
+                "Huddling/cuddling/comforting",
+                "Marking territory/claiming land",
+                "Mating/flirting/trysting",
+                "Migrating/moving to a new home",
+                "Patrolling/guarding/watching",
+                "Playing/frolicking/gaming/sporting",
+                "Quarreling/scuffling/arguing",
+                "Resting/meditating",
+                "Searching/seeking",
+                "Seeking shelter or higher ground",
+                "Sleeping/napping",
+                "Stalking/tracking",
+                "Starving/begging",
+                "Stumbling around disoriented",
+                "Taking care of young/children",
+                "Training/trained/domesticated",
+                "Undead version of creature",
+                "Wandering/drifting",
+                "Wounded/injured",
+            ]
+            const activityIndex = Math.floor(Math.random() * activity.length)
+            blurt({
+                title: 'What are those creatures doing?',
+                text: activity[activityIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else if(selectedActivityType == "Intelligent"){
+            const activity = [
+                "Being eaten/consumed",
+                "Being killed/butchered/harvested",
+                "Blind/lame/insensate",
+                "Congregating/amassing/clustering",
+                "Consuming/eating/feeding",
+                "Decoy/construct/fake/illusion",
+                "Digging/burrowing",
+                "Diseased/sick/poisoned",
+                "Dismembering/taking apart",
+                "Dying/dead",
+                "Fighting/battling",
+                "Frenzied/berserk/rabid",
+                "Giving birth/hatching/dividing",
+                "Going in circles/lost",
+                "Killing/butchering",
+                "Meandering aimlessly",
+                "Mutated/conjoined/albino",
+                "Nothing",
+                "Tangled/stuck",
+                "Trapped/caged",
+                "Caring for/watching over someone",
+                "Chasing/pursuing",
+                "Competing/challenging/tourneying",
+                "Crying/mourning",
+                "Displaying/signaling/calling",
+                "Feasting/gorging",
+                "Fleeing/routing",
+                "Foraging/seeking food",
+                "Gathering or marshalling resources",
+                "Grooming/preening/dressing up",
+                "Having a psychotic episode",
+                "Huddling/cuddling/comforting",
+                "Marking territory/claiming land",
+                "Mating/flirting/trysting",
+                "Migrating/moving to a new home",
+                "Patrolling/guarding/watching",
+                "Playing/frolicking/gaming/sporting",
+                "Quarreling/scuffling/arguing",
+                "Resting/meditating",
+                "Searching/seeking",
+                "Seeking shelter or higher ground",
+                "Sleeping/napping",
+                "Stalking/tracking",
+                "Starving/begging",
+                "Stumbling around disoriented",
+                "Taking care of young/children",
+                "Training/trained/domesticated",
+                "Undead version of creature",
+                "Wandering/drifting",
+                "Wounded/injured",
+                "Bathing/bathroom break",
+                "Bestowing honors/awards",
+                "Betraying/backstabbing",
+                "Building/breaking ground",
+                "Bullying/taunting/teasing",
+                "Burying/having a funeral",
+                "Buying/arranging to purchase",
+                "Camping/making camp",
+                "Caring for/maintaining tools",
+                "Celebrating/partying/dancing"
+            ]
+            const activityIndex = Math.floor(Math.random() * activity.length)
+            blurt({
+                title: 'What are those creatures doing?',
+                text: activity[activityIndex],
+                type: 'info',
+                okButtonText: 'Click anywhere to exit',
+                escapable: true
+            });
+        }
+        else{
+            blurt({
+                title: 'Error',
+                text: "No fate selected.",
+                type: 'error',
+                okButtonText: 'Uh oh',
+                escapable: true
+            });
+        }
     }
 
     function rollReactions() {

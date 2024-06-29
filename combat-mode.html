@@ -34,32 +34,34 @@
     <div class="container second">
         <div class="card">
             <div class="info">
-                <h3>Yes or No</h3>
-                <p>Classic, random fate roller. Pretty much like a coinflip.</p>
+                <h3>Random Enemy</h3>
+                <p>Roll for a random enemy type.</p>
             </div>
-            <button class="rollButton" onclick="rollYesNo();">ROLL</button>
+            <button class="rollButton" onclick="rollEnemyType();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Random Fate</h3>
-                <p>Random fate roller skewed to specific scenarios.</p>
+                <h3>Enemy Health</h3>
+                <p>Select severity and roll for health status.</p>
             </div>
             <select id="fateSelect">
-                <option value="Almost Certain">Almost Certain</option>
-                <option value="Very Likely">Very Likely</option>
-                <option value="Likely">Likely</option>
-                <option value="Unlikely">Unlikely</option>
-                <option value="Very Unlikely">Very Unlikely</option>
-                <option value="Near Impossible">Near Impossible</option>
+                <option value="Lightly Wounded">Lightly Wounded</option>
+                <option value="Heavily Wounded">Heavily Wounded</option>
+                <option value="Near Death">Near Death</option>
             </select>
             <button class="rollButton" onclick="rollFate();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Yes/No, and/but</h3>
-                <p>Expanded variation of the classic fate roller.</p>
+                <h3>Activities</h3>
+                <p>What are those creatures doing doing?</p>
             </div>
-            <button class="rollButton" onclick="rollYesNo2();">ROLL</button>
+            <select id="creatureSelect">
+                <option value="Mindless">Mindless</option>
+                <option value="Animalistic">Animalistic</option>
+                <option value="Intelligent">Intelligent</option>
+            </select>
+            <button class="rollButton" onclick="rollActivities();">ROLL</button>
         </div>
     </div>
     <div class="container third">
