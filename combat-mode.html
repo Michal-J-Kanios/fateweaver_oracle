@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="blurt/blurt.min.css">
+    <script src="blurt/blurt.min.js"></script>
+    <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="combat-style.css">
+    <title>Roleplay Mode</title>
+</head>
+<body>
+    <div class="container">
+        <p id="smallWeaver">Fate Weaver</p>
+        <h1>Combat Mode</h1>
+        <p>
+            Ready to rumble?
+            Determine enemy tactics, monster morale, traps, obstacles, and other elements that make combat
+            much more fun and dynamic to play!
+        </p>
+        <a id="domek" href="index.html">Home Page</a>
+        <br><br><br><br>
+    </div>
+    <div class="blank">
+        <h1>Fate</h1>
+        <p>
+            <i>"Tell me the future, oh wise one."</i><br>
+        </p>
+    </div>
+    <div class="container second">
+        <div class="card">
+            <div class="info">
+                <h3>Yes or No</h3>
+                <p>Classic, random fate roller. Pretty much like a coinflip.</p>
+            </div>
+            <button class="rollButton" onclick="rollYesNo();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Random Fate</h3>
+                <p>Random fate roller skewed to specific scenarios.</p>
+            </div>
+            <select id="fateSelect">
+                <option value="Almost Certain">Almost Certain</option>
+                <option value="Very Likely">Very Likely</option>
+                <option value="Likely">Likely</option>
+                <option value="Unlikely">Unlikely</option>
+                <option value="Very Unlikely">Very Unlikely</option>
+                <option value="Near Impossible">Near Impossible</option>
+            </select>
+            <button class="rollButton" onclick="rollFate();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Yes/No, and/but</h3>
+                <p>Expanded variation of the classic fate roller.</p>
+            </div>
+            <button class="rollButton" onclick="rollYesNo2();">ROLL</button>
+        </div>
+    </div>
+    <div class="container third">
+        <div class="card">
+            <div class="info">
+                <h3>Special Encounter</h3>
+                <p>Roll a special encounter if you need a strong plot hook.</p>
+            </div>
+            <button class="rollButton" onclick="rollSpecial();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Event Focus</h3>
+                <p>The point of a random event.</p>
+            </div>
+            <button class="rollButton" onclick="rollFocus();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Event Meaning</h3>
+                <p>Use this when you roll "Ambiguous Event" in the Event Focus table.</p>
+            </div>
+            <button class="rollButton" onclick="rollMeaning();">ROLL</button>
+        </div>
+    </div>
+    <div class="blank">
+        <h1>NPCs</h1>
+        <p>
+            <i>"Humans are social creatures."</i><br>
+        </p>
+    </div>
+    <div class="container fifth">
+        <div class="card">
+            <div class="info">
+                <h3>Role</h3>
+                <p>What's the character's role?</p>
+            </div>
+            <button class="rollButton" onclick="npcRole();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Personality</h3>
+                <p>What are the character's personality traits?</p>
+            </div>
+            <button class="rollButton" onclick="npcPersonality();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>Goals</h3>
+                <p>What are the character's goals?</p>
+            </div>
+            <button class="rollButton" onclick="npcGoal();">ROLL</button>
+        </div>
+    </div>
+    <div class="container sixth">
+        <div class="card">
+            <div class="info">
+                <h3>NPC Attitude</h3>
+                <p>What is the character's attitude?</p>
+            </div>
+            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>NPC Attitude</h3>
+                <p>What is the character's attitude?</p>
+            </div>
+            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+        </div>
+        <div class="card">
+            <div class="info">
+                <h3>NPC Attitude</h3>
+                <p>What is the character's attitude?</p>
+            </div>
+            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+        </div>
+    </div>
+    <div class="blank-2">
+        <div class="footer">
+            <div class="column">
+                <h3>Credits</h3>
+                <ul>
+                    <li><a href="https://github.com/Michal-J-Kanios">Made by Michał Kanios</a></li>
+                    <li><a href="https://company.wizards.com/en">Not affiliated with WOTC</a></li>
+                    <li><a href="https://github.com/Michal-J-Kanios/fateweaver_oracle">Open source, non-profit</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="combat-mode.html">Combat Mode</a></li>
+                    <li><a href="exploration-mode.html">Exploration Mode</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="combat-script.js"></script>
+</body>
+</html>
