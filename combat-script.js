@@ -485,6 +485,121 @@
         });
     }
 
+    function rollMorale() {
+        const morale= [
+            "Will surrender after heavy casualties",
+            "Will surrender after heavy casualties",
+            "Will surrender after heavy casualties",
+            "Will try to run away after heavy casualties",
+            "Will try to run away after heavy casualties",
+            "Will surrender after light casualties",
+            "Will try to run away after light casualties",
+            "Will tactically retreat and come back after light casualties.",
+            "Will run away and plan an ambush after heavy casualties",
+            "Will surrender after monetary loss",
+            "Will run away after monetary loss",
+            "Will run away after monetary loss",
+            "Will run away after monetary loss",
+            "Will surrender if equipment deteriorates",
+            "Will run away if equipment deteriorates",
+            "Will surrender if enough resources have been expended",
+            "Will run away if enough resources have been expended",
+            "Will run away if enough resources have been expended",
+            "Will run away if enough resources have been expended",
+            "Will surrender after failing its objective",
+            "Will surrender after failing its objective",
+            "Will run away after failing its objective",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will fight to the death",
+            "Will negotiate peace at advantage",
+            "Will negotiate peace at advantage",
+            "Will negotiate surrender at disadvantage",
+            "Will negotiate surrender at disadvantage",
+            "Will negotiate surrender at disadvantage",
+            "Will bargain mid-fight",
+            "Will beg for mercy at disadvantage",
+            "Will beg for mercy at disadvantage",
+            "Doesn't want to fight. Can be persuaded to flee/surrender.",
+            "Doesn't want to fight. Can be persuaded to flee/surrender.",
+            "Doesn't want to fight. Can be persuaded to flee/surrender."
+        ]
+        const moraleIndex = Math.floor(Math.random() * morale.length)
+        blurt({
+            title: 'Morale',
+            text: morale[moraleIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollMotivation() {
+        const motivation= [
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Material Gain",
+            "Honour",
+            "Honour",
+            "Glory",
+            "Glory",
+            "Glory",
+            "Glory",
+            "Glory",
+            "Domination",
+            "Domination",
+            "Domination",
+            "Domination",
+            "Domination",
+            "Wrath",
+            "Wrath",
+            "Wrath",
+            "Order/Duty",
+            "Order/Duty",
+            "Order/Duty",
+            "Order/Duty",
+            "Order/Duty",
+            "Order/Duty",
+            "Personal Investment",
+            "Survival",
+            "Survival",
+            "Survival",
+            "Bloodlust",
+            "Bloodlust",
+            "Project power",
+            "Project power",
+            "Project power",
+            "Cause fear",
+            "Cause fear",
+            "Reach a place",
+            "Escape from a place"
+        ]
+        const motivationIndex = Math.floor(Math.random() * motivation.length)
+        blurt({
+            title: 'Motivation',
+            text: motivation[motivationIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
     function rollObstacles() {
         const obstacles= [
             "1d4 small features (trees, rocks, smaller objects)",
