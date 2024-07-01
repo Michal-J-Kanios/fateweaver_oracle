@@ -390,7 +390,7 @@
             "Wild Magic Storm - roll on the Wild Magic effects table every time a spell is cast.",
             "Corrupted Soil - all movement made on foot deals 1d4 necrotic damage for every 5ft covered. The damage increases to 2d4 at 5th character level, 3d4 at 10th level, and 4d4 at 15th level.",
             "Blinding Radiance - all creatures with sunlight sensitivity are completely blind. Undead creatures take 20 radiant damage every turn.",
-            "Necrotic Shroud - non-undead creatures gain a vulnerability to necrotic damage. Undead creatures have advantage on attack rolls and ability checks.",
+            "Necrotic Shroud - non-undead creatures gain a vulnerability to necrotic damage and come back to life as zombies when killed. Undead creatures have advantage on attack rolls and ability checks.",
             "Wicked Thunderbolts - assign a number to every creature and roll a die with that amount of sides. The number rolled has to succeed on a DC 15 DEX saving throw or get hit by a 4d10 lightning damage thunderbolt. Make this roll at the beginning and end of a round.",
             "Raging Storms - flying speed is nullified. Ranged attacks are made at disadvantage. Lightning and Cold damage bypass resistances (but not immunities).",
             "Fey Field - whenever any creature finishes its turn, it must succeed on a DC 15 CHA saving throw or be teleported to a random location on the battlemap. Fey creatures (or those with fey ancestry) make the saving throw with advantage.",
@@ -402,12 +402,33 @@
             "Earth Tremors - burrowing speed is nullified. At the beginning of any standing creature's turn, it must succeed on a DC 12 STR saving throw or fall prone and take 1d12 bludgeoning damage.",
             "Slippery Ice - the surface of the battlefield is encased in ice that can be melted with fire damage. The ice counts as difficult terrain. Creatures who begin their turn on the ice must succeed on a DC 12 DEX saving throw or fall prone and take 1d8 cold damage.",
             "Twisting Vines - strange plants sprout onto the battlefield in random spots. Going 10ft near them forces out a DC 14 STR saving throw. Upon failure, a creature is grappled by the vines.",
-            "",
+            "Guiding Wind - all ranged attack rolls are made at advantage. For the duration of the fight, ''Guiding Bolt'' becomes a 100% hit spell (like Magic Missile).",
+            "Vampiric Hunger - all physical attacks restore the attacker's hit points by an amount equal to damage dealt.",
+            "Deafening Quiet - the battlefield becomes encased inside of a bubble that resembles the ''Silence'' spell. Thunder damage is nullified, no sounds can be heard, and spells with verbal components cannot be cast.",
+            "Scorching Heat - all fire damage bypasses resistances and inflicts burning upon failing a DC 12 CON save (deals 1d6 fire damage every turn, makes target vulnerable to fire damage)",
+            "Mechanus Intervention - creatures from the mechanus plane become overseers of the battle that's taking place. No critical successes or critical failures can occur (they must be rerolled).",
+            "Eldritch Whispers - creatures with an INT score above 3 make a DC 14 INT saving throw at the start of their turns. Upon failure, they go insane from forbidden knowledge being poured into their minds, suffering 1d12 psychic damage and losing their turns, while also having to repeat the saving throw every other turn. Once they succeed, however, they are immune to the effect for the rest of the fight.",
+            "Twisted Force - until the end of combat, force damage bypasses resistances and immunities.",
+            "Cruel Crits - critical hit range for all creatures is expanded by 1. For example: creatures with already expanded range, such as 18-19, will now crit on a roll of 17-19."
         ]
         const modifiersIndex = Math.floor(Math.random() * modifiers.length)
         blurt({
             title: 'Modifier',
             text: modifiers[modifiersIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollVariants() {
+        const variants= [
+            
+        ]
+        const variantsIndex = Math.floor(Math.random() * variants.length)
+        blurt({
+            title: 'Variant',
+            text: variants[variantsIndex],
             type: 'info',
             okButtonText: 'Click anywhere to exit',
             escapable: true
