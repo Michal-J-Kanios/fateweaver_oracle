@@ -3,7 +3,7 @@
 Roll on compact roll tables and string the results together using your imagination to quickly create an engaging world that is ready for adventure!
 ## Access the app by clicking [Here!](https://fateweaver-michal-j-kanios-projects.vercel.app/)
 ### Project is open source. Feel free to reflavour it to other TTRPG systems, as long as you give proper credit :D 
-![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/fate_weaver_screenshot.png?raw=true)
+![image](https://github.com/Michal-J-Kanios/fateweaver_oracle/main/fate_weaver_screenshot.png)
 
 ## Your adventure went off the rails and you can't find...
 - Any random encounter tables?
