@@ -633,6 +633,25 @@
         });
     }
 
+    function rollArchetype() {
+        const archetypes= [
+            "Protector - tanks enemy attacks, blocks enemies, shields allies, stays close to the team (e.g. Paladin, Cleric, Barbarian, Fighter, Druid)",
+            "Mauler - deals damage by any means neccessary, acts recklessly and wastes resources immediately (e.g. Fighter, Barbarian, Sorcerer, Warlock)",
+            "Zoner - maintains distance, uses ranged attacks, resorts to ambushes or environmental kills when at close range (e.g. Ranger, Rogue, Fighter, Wizard, Sorcerer, Warlock)",
+            "Support - uses utility spells or items to buff their allies or cripple their enemies, heals using spells/healer's kit/potions (e.g. Cleric, Druid, Bard)",
+            "Controller - handles multiple enemies at a time, will alter the battlefield if they're a spellcaster, focuses mainly on effective placement and depleting enemy resources (e.g. Wizard, Druid)",
+            "Assassin - usually stealthy, deals heavy single-target damage, picks off enemies one by one (e.g. Rogue, Ranger, Paladin)"
+        ]
+        const archetypesIndex = Math.floor(Math.random() * archetypes.length)
+        blurt({
+            title: 'Archetype',
+            text: archetypes[archetypesIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
     function rollObstacles() {
         const obstacles= [
             "1d4 small features (trees, rocks, smaller objects)",
