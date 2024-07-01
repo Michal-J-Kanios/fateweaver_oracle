@@ -600,6 +600,39 @@
         });
     }
 
+    function rollInitiative() {
+        const initiative= [
+            "Players go first",
+            "Enemies go first",
+            "Alphabetical order",
+            "Side with a higher sum of initiative rolls goes first",
+            "Roll normally, but flip the order (last goes first)",
+            "Low hit points priority. The less you have, the earlier you move",
+            "High hit points priority. The more you have, the earlier you move",
+            "Start off normally, and roll on this table in round 2",
+            "Roll on this table every round",
+            "Reroll player initiative every round",
+            "Reroll enemy initiative every round",
+            "Roll neutral initiative for everyone (no buffs or debuffs)",
+            "Reroll initiative after every death",
+            "Flip a coin to see which side goes first",
+            "Best out of 3 coinflips goes first",
+            "Flip a coin to see which side rolls with advantage",
+            "Players roll with advantage",
+            "Enemies roll with advantage",
+            "Enemies get two turns, but Players roll with advantage",
+            "Players go first, but Enemies have two turns"
+        ]
+        const initiativeIndex = Math.floor(Math.random() * initiative.length)
+        blurt({
+            title: 'Initiative',
+            text: initiative[initiativeIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
     function rollObstacles() {
         const obstacles= [
             "1d4 small features (trees, rocks, smaller objects)",
