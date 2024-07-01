@@ -11,7 +11,7 @@
     <script src="blurt/blurt.min.js"></script>
     <script src="https://kit.fontawesome.com/241801b465.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="combat-style.css">
-    <title>Roleplay Mode</title>
+    <title>Combat Mode</title>
 </head>
 <body>
     <div class="container">
@@ -26,9 +26,9 @@
         <br><br><br><br>
     </div>
     <div class="blank">
-        <h1>Fate</h1>
+        <h1>Enemies</h1>
         <p>
-            <i>"Tell me the future, oh wise one."</i><br>
+            <i>"Know your enemy."</i><br>
         </p>
     </div>
     <div class="container second">
@@ -67,76 +67,76 @@
     <div class="container third">
         <div class="card">
             <div class="info">
-                <h3>Special Encounter</h3>
-                <p>Roll a special encounter if you need a strong plot hook.</p>
+                <h3>Morale</h3>
+                <p>Determine how eager your enemies are to surrender/flee.</p>
             </div>
-            <button class="rollButton" onclick="rollSpecial();">ROLL</button>
+            <button class="rollButton" onclick="rollMorale();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Event Focus</h3>
-                <p>The point of a random event.</p>
+                <h3>Motivation</h3>
+                <p>What are your enemies fighting for?</p>
             </div>
-            <button class="rollButton" onclick="rollFocus();">ROLL</button>
+            <button class="rollButton" onclick="rollMotivation();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Event Meaning</h3>
-                <p>Use this when you roll "Ambiguous Event" in the Event Focus table.</p>
+                <h3>Archetype</h3>
+                <p>Determine an enemy's archetype - as in what they do on the battlefield.</p>
             </div>
-            <button class="rollButton" onclick="rollMeaning();">ROLL</button>
+            <button class="rollButton" onclick="rollArchetype();">ROLL</button>
         </div>
     </div>
     <div class="blank">
-        <h1>NPCs</h1>
+        <h1>Battlefield</h1>
         <p>
-            <i>"Humans are social creatures."</i><br>
+            <i>"All is fair in love and war."</i><br>
         </p>
     </div>
     <div class="container fifth">
         <div class="card">
             <div class="info">
-                <h3>Role</h3>
-                <p>What's the character's role?</p>
+                <h3>Obstacles</h3>
+                <p>Determine what stands between you and the enemy.</p>
             </div>
-            <button class="rollButton" onclick="npcRole();">ROLL</button>
+            <button class="rollButton" onclick="rollObstacles();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Personality</h3>
-                <p>What are the character's personality traits?</p>
+                <h3>Modifiers</h3>
+                <p>Roll for interesting modifiers that make each battle unique.</p>
             </div>
-            <button class="rollButton" onclick="npcPersonality();">ROLL</button>
+            <button class="rollButton" onclick="rollModifiers();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>Goals</h3>
-                <p>What are the character's goals?</p>
+                <h3>Variants</h3>
+                <p>Roll to determine a unique creature variant that grants new abilities.</p>
             </div>
-            <button class="rollButton" onclick="npcGoal();">ROLL</button>
+            <button class="rollButton" onclick="rollVariants();">ROLL</button>
         </div>
     </div>
     <div class="container sixth">
         <div class="card">
             <div class="info">
-                <h3>NPC Attitude</h3>
-                <p>What is the character's attitude?</p>
+                <h3>Initiative</h3>
+                <p>Roll to determine an alternate method of counting initiative.</p>
             </div>
-            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+            <button class="rollButton" onclick="rollInitiative();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>NPC Attitude</h3>
-                <p>What is the character's attitude?</p>
+                <h3>Gear</h3>
+                <p>Roll to determine if a select enemy has special items in their disposal.</p>
             </div>
-            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+            <button class="rollButton" onclick="rollGear();">ROLL</button>
         </div>
         <div class="card">
             <div class="info">
-                <h3>NPC Attitude</h3>
-                <p>What is the character's attitude?</p>
+                <h3>Win Condition</h3>
+                <p>Roll to determine the combat encounter's win condition - as in, the main goal.</p>
             </div>
-            <button class="rollButton" onclick="rollReactions();">ROLL</button>
+            <button class="rollButton" onclick="rollWincon();">ROLL</button>
         </div>
     </div>
     <div class="blank-2">
