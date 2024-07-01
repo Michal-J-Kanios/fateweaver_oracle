@@ -387,16 +387,53 @@
         const modifiers= [
             "Reactive Antimagic Zone - once a spell has been cast in the battlefield, no further spells may be cast there until the fight is over.",
             "Antimagic Zone - no spells can be cast in the area until the fight is over.",
-            "Wild Magic - roll on the Wild Magic effects table every time a spell is cast.",
+            "Wild Magic Storm - roll on the Wild Magic effects table every time a spell is cast.",
             "Corrupted Soil - all movement made on foot deals 1d4 necrotic damage for every 5ft covered. The damage increases to 2d4 at 5th character level, 3d4 at 10th level, and 4d4 at 15th level.",
             "Blinding Radiance - all creatures with sunlight sensitivity are completely blind. Undead creatures take 20 radiant damage every turn.",
             "Necrotic Shroud - non-undead creatures gain a vulnerability to necrotic damage. Undead creatures have advantage on attack rolls and ability checks.",
-            "Storm",
+            "Wicked Thunderbolts - assign a number to every creature and roll a die with that amount of sides. The number rolled has to succeed on a DC 15 DEX saving throw or get hit by a 4d10 lightning damage thunderbolt. Make this roll at the beginning and end of a round.",
+            "Raging Storms - flying speed is nullified. Ranged attacks are made at disadvantage. Lightning and Cold damage bypass resistances (but not immunities).",
+            "Fey Field - whenever any creature finishes its turn, it must succeed on a DC 15 CHA saving throw or be teleported to a random location on the battlemap. Fey creatures (or those with fey ancestry) make the saving throw with advantage.",
+            "Aura of Healing - a healing spirit floats around the battlefield, searching for the wounded. Once a round is over, the last creature to have taken damage receives Xd6+X healing, with X corresponding to its level.",
+            "Strong Winds - flying speed is nullified. Ranged attacks are made at disadvantage.",
+            "Foggy Terrain - roll 1d4+2. Place that many fog clouds all over the battlefield. They'll disperse once the fight is over.",
+            "Magical Mist - the battlefield is covered in a mist that lightly obscures the vision of all creatures present. It is also highly explosive. If a damaging spell is cast inside of the mist, it will cause a reaction that deals 2d12 force damage to everyone inside. Once that happens or combat is over, the mist disperses.",
+            "Aura of Harming - a harmful spirit floats around the battlefield, looking for those yet unharmed. Once a round is over, creatures who didn't take any damage receive Xd6+X damage that bypasses resistances and immunities, with X corresponding to their levels.",
+            "Earth Tremors - burrowing speed is nullified. At the beginning of any standing creature's turn, it must succeed on a DC 12 STR saving throw or fall prone and take 1d12 bludgeoning damage.",
+            "Slippery Ice - the surface of the battlefield is encased in ice that can be melted with fire damage. The ice counts as difficult terrain. Creatures who begin their turn on the ice must succeed on a DC 12 DEX saving throw or fall prone and take 1d8 cold damage.",
+            "Twisting Vines - strange plants sprout onto the battlefield in random spots. Going 10ft near them forces out a DC 14 STR saving throw. Upon failure, a creature is grappled by the vines.",
+            "",
         ]
         const modifiersIndex = Math.floor(Math.random() * modifiers.length)
         blurt({
             title: 'Modifier',
             text: modifiers[modifiersIndex],
+            type: 'info',
+            okButtonText: 'Click anywhere to exit',
+            escapable: true
+        });
+    }
+
+    function rollObstacles() {
+        const obstacles= [
+            "1d4 small features (trees, rocks, smaller objects)",
+            "1d4 small features (trees, rocks, smaller objects)",
+            "1d4 small features (trees, rocks, smaller objects)",
+            "1d4 small features (trees, rocks, smaller objects)",
+            "1 medium feature (rows of trees, boulders, larger objects)",
+            "1 medium feature (rows of trees, boulders, larger objects)",
+            "1 medium feature (rows of trees, boulders, larger objects)",
+            "1 medium and 1 small feature",
+            "1d4 linear features (walls, fences, rows of objects)",
+            "1d4 medium featuers and 1d4 linear features",
+            "1d4 large features",
+            "1 large features and 1d4 linear features",
+            "1 large feature and 1d4 medium features"
+        ]
+        const obstaclesIndex = Math.floor(Math.random() * obstacles.length)
+        blurt({
+            title: 'Obstacle',
+            text: obstacles[obstaclesIndex],
             type: 'info',
             okButtonText: 'Click anywhere to exit',
             escapable: true
